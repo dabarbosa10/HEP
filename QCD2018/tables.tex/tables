@@ -1,0 +1,302 @@
+\begin{document}
+\maketitle
+%-----------------------------------------
+\begin{frame}{CR's  Selection Criteria}
+\begin{flushleft}
+\small
+Run & SingleE Run2016 (2017, 2018), Trigger & HLT\_Ele(27,32or35)\_WPTight24  \\
+\end{flushleft}
+\begin{table}[h!]
+\scalebox{0.60}{
+\begin{tabular}{lll}
+\hline
+$N(\mu)=0$ &$(p_T>15\text{ GeV})$ & \\
+$N(jj)=0$ & $|\Delta \eta(jj)|\geq 3.8$ &  \\
+\hline
+Ele & $N(e)$ 			& $= 1$  \\
+& $p_T(e)$			    & $>35 (55)$ GeV   \\
+& $|\eta(e)|$ 		& $<2.1$   \\
+& Relative Isolation 	& $<0.15$ \\
+\hline 
+Tau & $N(\tau_h)$ 			& $= 1$  \\
+& $p_T(\tau_h)$			& $>20$ GeV   \\
+& $|\eta(\tau_h)|$ 	& $<2.1$   \\
+& Isolation 			& Tight \\
+& Prongs 			& 1 or 3 hp \\
+\hline
+$e-\tau$ pair & $Q(e)Q(\tau)$ 	& $<0$ (OS)  	\\
+& $\Delta R(e,\tau_h)$ 	& $>0.5$   \\
+& $N(e,\tau_h)$ pairs 	& $= 1$   \\
+& $\cos\Delta\phi(e,\tau_h)$ &$<-0.98$ \\
+& $m_T(p_T^{\text{lead-}\ell},E_T^{miss})$ & $>150$ GeV \\
+\hline
+leading lepton &$|\cos\Delta\phi(p_T^{\text{lead-}\ell},E_T^{miss})|$ & $>0.95$ \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\begin{tabular}{l|l}
+\hline
+CR-DY & CR-$t\bar{t}$ \\
+\hline
+$m_T(p_T^{\text{lead-}\ell},E_T^{miss})<150$ GeV & $N(b\text{-jets})\geq 1$ \\  
+$70<m_{rec}(e,\tau_h,\Delta p_T)<110$ GeV &    \\
+\hline
+\end{tabular}\\
+
+*($p_T>30$ GeV \& CSV medium(2016), DeepCSV(2017),DeepF(2018))
+\end{frame}
+%-----------------------------
+\begin{frame}{(QCD+WJets) estimation $Z'\rightarrow\tau_e\tau_h$}
+
+To estimate (QCD+WJets) we propose to use the ABCD method:
+\begin{center}
+\footnotesize
+\begin{tikzpicture}[scale=1.05]
+\tkzInit[xmin=0,xmax=10,
+         ymin=0,ymax=10,
+         xstep=5,ystep=5]
+\tkzDrawX[label={\textit{$Q(e)Q(\tau)$}}, right=1pt]
+\tkzDrawY[label={\textit{Iso($\tau$)}},above=1pt]
+\tkzGrid(0,0)(10,10) 
+\tkzText(2.5,-2){$OS$}
+\tkzText(7.5,-2){$LS$}
+\tkzText(-2,8.5){$\tau Iso$}
+\tkzText(-6.5,6.5){$m_T^{\text{lead-}\ell}>150$ GeV}
+\tkzText(-4,3.5){$\tau$ \textit{anti-Iso}}
+\tkzText(-6.5,1.5){$m_T^{\text{lead-}\ell}<150$ GeV}
+\tkzText[draw](2.5,7.5){$SR$}
+\tkzText(7.5,7.5){$B$}
+\tkzText(2.5,2.5){$C$}
+\tkzText(7.5,2.5){$D$}
+%\tkzFct[domain=0:2,color=blue, thick,-]{1}
+\end{tikzpicture}
+
+
+%\includegraphics[width=0.75\linewidth]{Plot1Mrec.pdf}   
+     
+    
+\begin{equation*}
+\textcolor{blue}{
+\boxed{N_{SR}^{(QCD+WJets)}&=R_{OS/LS}\cdot(N_{B}^{\text{Data}}-N_{B}^{\text{non-(QCD+WJets)}})_{LS} }}
+ \\  \quad\text{where}\quad \\
+   \skip
+\textcolor{blue}{
+\boxed{R_{OS/LS}=\frac{(N_{C}^{\text{Data}}-N_{C}^{\text{non-(QCD+WJets)}})_{OS}}
+{(N_{D}^{\text{Data}}-N_{D}^{\text{non-(QCD +WJets)}})_{LS}}}}
+\end{equation*}
+\end{center}  
+\end{frame}
+%--------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{(QCD+WJets) 2016 Estimation}
+
+
+\begin{columns}
+   
+    \begin{column}{.7\textwidth}
+\centering
+\includegraphics[scale=0.16]{2016_SR_WJetsQCD.eps}\\
+
+\includegraphics[scale=0.155]{2016_LS_RecMass.eps}
+\includegraphics[scale=0.16]{2016_OS_RecMass.eps}
+%\includegraphics[scale=0.18]{muTau_QCD_CRD_2018.pdf}
+
+    \end{column}
+ \begin{column}{\textwidth}
+\footnotesize  
+\begin{itemize}
+    \item Using control regions
+    \\ C and D:
+\end{itemize}
+    
+\footnotesize
+\begin{equation*}
+
+    \textcolor{blue}{
+\boxed{R_{OS/LS}=1.87\pm 0.12}}
+\end{equation*}
+
+
+    
+\footnotesize
+
+\footnotesize  
+\begin{itemize}
+    \item Using control region
+    \\ B and the TF:
+\end{itemize}
+
+\begin{flalign}
+&\textcolor{blue}{
+\boxed{N_{SR}^{(QCD+WJets)}&= 75.2 \pm 11.8}}   &
+\end{flalign}
+
+
+
+
+
+
+
+    \end{column}    
+    
+  \end{columns}
+\centering
+\resizebox{0.75\textwidth}{!}{
+\begin{tabular}{  l c c    c  c  c c }
+\hline\hline
+Process & Data & Drell-Yan & $t\bar{t}$ & Single Top  & Diboson  & \textcolor{blue}{QCD+WJets Purity}\\ \hline
+CR-B & 59.0  & 12.3 $\pm$ 3.8 & 1.2 $\pm$ 0.7 & 0.4 $\pm$ 0.2 & 4.9 $\pm$ 0.4  & \textcolor{blue}{68\%} \\ 
+CR-C & 17504.0  & 2377.9 $\pm$ 58.5 & 64.7 $\pm$ 5.0 &  21.0 $\pm$ 1.9 & 59.8 $\pm$ 3.4 & \textcolor{blue}{91\%} \\ 
+CR-D & 8657.0 & 612.6 $\pm$ 28.7  & 18.3 $\pm$ 2.6 & 5.9 $\pm$ 0.8   & 18.4 $\pm$ 1.7 & \textcolor{blue}{86\%}\\ 
+\hline\hline
+\end{tabular}
+}
+
+\end{frame}
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{(QCD+WJets) 2017 Estimation}
+
+
+\begin{columns}
+   
+    \begin{column}{.70\textwidth}
+\centering
+\includegraphics[scale=0.16]{2017_SR_WJetsQCD.eps}\\
+
+\includegraphics[scale=0.16]{2017_QCD_LS_150.eps}
+\includegraphics[scale=0.16]{2017_QCD_OS_150.eps}
+%\includegraphics[scale=0.18]{muTau_QCD_CRD_2018.pdf}
+
+    \end{column}
+    
+ \begin{column}{\textwidth}
+
+\footnotesize  
+\begin{itemize}
+    \item Using control regions
+    \\ C and D:
+\end{itemize}
+    
+\footnotesize
+
+\begin{flalign}
+   & \textcolor{blue}{
+\boxed{R_{OS/LS}=2.23\pm 0.11}}&
+\end{flalign}
+\footnotesize  
+\begin{itemize}
+    \item Using control region
+    \\ B and the TF:
+\end{itemize}
+
+\begin{flalign}
+& \textcolor{blue}{
+\boxed{N_{SR}^{(QCD+WJets)}&= 246.9\pm 33.7}}   &
+\end{flalign}
+
+
+
+
+
+
+
+    \end{column}    
+    
+  \end{columns}
+\centering
+\resizebox{0.7\textwidth}{!}{
+\begin{tabular}{  l c c    c  c  c c }
+\hline\hline
+Process & Data & Drell-Yan & $t\bar{t}$ & Single Top  & Diboson  & \textcolor{blue}{QCD+WJets Purity} \\ \hline
+CR-B & 142.0 & 18.2 $\pm$ 7.5 & 4.2 $\pm$ 0.6  & 1.4 $\pm$ 0.5 & 7.5 $\pm$ 1.1 &\textcolor{blue}{78\%} \\ 
+CR-C & 10891.0  & 765.6 $\pm$ 56.4 & 76.3 $\pm$ 2.8 &  25.3 $\pm$ 2.0 & 47.5 $\pm$ 3.0 & \textcolor{blue}{92\%} \\ 
+CR-D & 5096.0 & 664.0 $\pm$ 52.1  & 22.3 $\pm$ 1.6 & 6.7 $\pm$ 0.9   & 14.8 $\pm$ 1.5 & \textcolor{blue}{86\%}  \\ 
+\hline\hline
+\end{tabular}
+}
+
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{(QCD+WJets) 2018 Estimation}
+
+
+\begin{columns}
+
+\begin{column}{.70\textwidth}
+\centering
+\includegraphics[scale=0.16]{2018_SR_WJetsQCD.pdf}\\
+
+\includegraphics[scale=0.16]{2018_LS_RecMass.eps}
+\includegraphics[scale=0.16]{2018_OS_RecMass.eps}
+%\includegraphics[scale=0.18]{muTau_QCD_CRD_2018.pdf}
+
+    \end{column}
+
+    \begin{column}{\textwidth}
+\footnotesize  
+\begin{itemize}
+    \item Using control regions
+    \\ C and D:
+\end{itemize}
+    
+\footnotesize
+
+\begin{flalign}
+    &\textcolor{blue}{
+\boxed{R_{OS/LS}=2.24\pm 0.10}}&
+\end{flalign}
+
+\footnotesize  
+\begin{itemize}
+    \item Using control region
+    \\ B and the TF:
+\end{itemize}
+
+\begin{flalign}
+ &\textcolor{blue}{
+\boxed{N_{SR}^{(QCD+WJets)}&= 258.7\pm 34.8}}   &
+\end{flalign}
+
+
+
+    \end{column}
+    
+  \end{columns}
+\centering
+\resizebox{0.7\textwidth}{!}{
+\begin{tabular}{  l c c    c  c  c c }
+\hline\hline
+Process & Data & Drell-Yan & $t\bar{t}$ & Single Top  & Diboson  & \textcolor{blue}{QCD+WJets Purity} \\ \hline
+CR-B & 158.0 & 27.6 $\pm$ 7.5 & 5.7 $\pm$ 1.0  & 1.1 $\pm$ 0.5 & 8.1 $\pm$ 0.6 &\textcolor{blue}{73\%} \\ 
+CR-C & 15660.0  & 1031.9 $\pm$ 55.4 & 88.4 $\pm$ 3.8 &  30.5 $\pm$ 2.5 & 71.5 $\pm$ 2.7 &\textcolor{blue}{92\%}  \\ 
+CR-D & 7417.0 & 919.4 $\pm$ 52.0  & 26.5 $\pm$ 2.2 & 11.4 $\pm$ 1.4   & 14.8 $\pm$ 1.1 &\textcolor{blue}{87\%}\\ 
+\hline\hline
+\end{tabular}
+}
+
+\end{frame}
+%------------------------------------------------
+%\begin{frame}{Errors LPC}
+  %   \centering
+   % \includegraphics[scale=0.5]{errorsLPC.pdf}
+%\end{frame}
+
+
+%---------------------------------
+\begin{frame}{Remarks}
+\begin{itemize}
+    \item The QCD+WJets purities obtanined for all the control regions are in general high.
+    \item We have estimated QCD+Wjets for all the three years.
+    \item We have to complete the analysis with other tests in order to validate this proposal.
+\end{itemize}
+ 
+\end{frame}
