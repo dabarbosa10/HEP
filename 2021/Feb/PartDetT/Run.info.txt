@@ -1,0 +1,32 @@
+/// ------ Triggers ----- ///
+
+Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf
+Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf
+UseTriggerWildcard true
+
+Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf
+Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
+
+///---Treat Muon as Neutrino---///
+
+TreatMuonsAsNeutrinos 0
+TreatOnlyOneMuonAsNeutrino 0
+TreatMuonsAsTaus 0
+
+///-----MET cuts------///
+ApplyMetFilters true
+MT2Mass 0.
+DiscrByMet false
+MetCut 50.0 10000.0
+
+DiscrByMHT false
+MhtCut 50.0
+DiscrByHT false
+HtCut 30.0
+
+JetPtForMhtAndHt 30.0
+JetEtaForMhtAndHt 5.0
+ApplyJetLooseIDforMhtAndHt true
+
+/// --- MC selection --- ///
+InitializeMCSelection false

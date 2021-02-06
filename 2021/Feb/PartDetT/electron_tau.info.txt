@@ -1,0 +1,152 @@
+######################################
+          Electron1Tau1
+#####################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  OS
+DiscrByCosDphi   1
+CosDphiCut       -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByCosDphiLeadPtAndMet true
+CosDphiLeadPtAndMetCut -1.01  -0.95
+
+DiscrByMtLeadPtAndMet true
+MtLeadPtAndMetCut 150.0 9999.0
+
+
+DiscrByMassReco  false
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+DiscrByDiLepMassDeltaPt 0
+DiLeadMassDeltaPtCut 0.0 9999.0
+
+#########################################
+             Electron1Tau2
+#########################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  OS
+DiscrByCosDphi   1
+CosDphiCut       -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByCosDphiLeadPtAndMet true
+CosDphiLeadPtAndMetCut -1.01  -0.95
+
+DiscrByMtLeadPtAndMet true
+MtLeadPtAndMetCut 150.0 9999.0
+
+DiscrByMassReco  false
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+DiscrByDiLepMassDeltaPt 0
+DiLeadMassDeltaPtCut 0.0 9999.0
+
+
+#########################################
+             Electron2Tau1
+#########################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  OS
+DiscrByCosDphi   1
+CosDphiCut       -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByCosDphiLeadPtAndMet true
+CosDphiLeadPtAndMetCut -1.01  -0.95
+
+DiscrByMtLeadPtAndMet true
+MtLeadPtAndMetCut 150.0 9999.0
+
+
+DiscrByMassReco  false
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+DiscrByDiLepMassDeltaPt 0
+DiLeadMassDeltaPtCut 0.0 9999.0
+
+
+#########################################
+            Electron2Tau2
+#########################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  OS
+DiscrByCosDphi   1
+CosDphiCut       -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByCosDphiLeadPtAndMet true
+CosDphiLeadPtAndMetCut -1.01  -0.95
+
+DiscrByMtLeadPtAndMet true
+MtLeadPtAndMetCut 150.0 9999.0
+
+
+DiscrByMassReco  false
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+DiscrByDiLepMassDeltaPt 0
+DiLeadMassDeltaPtCut 0.0 9999.0
