@@ -1,0 +1,458 @@
+***NRecoVertex                  1   -1   ///at least one good vertex
+***NRecoTriggers1               1   -1   ///events must fire the HLT_IsoMu24 trigger
+***NRecoElectron1               0    0
+***NRecoMuon1                   1    1
+***NRecoTau1                    1    1
+***NRecoBJet                    0    0
+***NMuon1Tau1Combinations       1    1
+***NDiJetCombinations           0    0
+
+##########################
+###################################
+                Run
+####################################
+
+CalculatePUSystematics false
+DataHistos PileUpReweighting2016.root       # 2016: PileUpReweighting2016.root, 2017: PileUpReweighting2017.root, 2018: PileUpReweighting2018.root
+MCHistos mc2016_pileup_Dec2018reReco.root   # 2016: mc2016_pileup_Dec2018reReco.root, 2017: mc2017_pileup_Dec2018reReco.root, 2018: 2016: mc2018_pileup_Dec2018reReco.root
+DataPUHistName pileup
+MCPUHistName pileup
+
+SpecialMCPUCalculation false
+SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6.root
+# SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
+
+ApplyTauIDSF false
+TauIdSFsByDM false # Tau ID scale factors that are decay mode (DM) - dependent. If using di-tau triggers and tau-pt > 40 GeV, this are the recommended SFs.
+TauSFforEmbeddedSamples false
+
+ApplyTauAntiEleSF false
+ApplyTauAntiMuSF false
+
+UsePileUpWeight false
+ApplyZBoostSF false
+
+isData true
+ApplyGenWeight  false
+
+ApplyHEMVeto2018 false
+
+/// ------ Data-specific cuts ------///
+FilterDataByGoldenJSON true
+
+/// ------ MC Gen-level cuts ------///
+/// --- HT filter --- ///
+DiscrByGenHT false
+LowerGenHtCut 0.0
+UpperGenHtCut 100.0
+
+/// --- dilepton mass filter --- ///
+DiscrByGenDileptonMass false
+GenDilepMassRange 80.0 100.0
+
+/// ------ Triggers ----- ///
+
+Trigger1FirstRequirement HLT_IsoMu24
+Trigger1SecondRequirement HLT_IsoMu24
+UseTriggerWildcard true
+
+Trigger2FirstRequirement HLT_IsoMu24
+Trigger2SecondRequirement HLT_IsoMu24
+
+///---Treat Muon as Neutrino---///
+
+TreatMuonsAsNeutrinos 0
+TreatOnlyOneMuonAsNeutrino 0
+TreatMuonsAsTaus 0
+
+///-----MET cuts------///
+ApplyMetFilters false
+MT2Mass 0.
+DiscrByMet false
+MetCut 30.0 10000.0
+
+DiscrByMHT false
+MhtCut 50.0
+DiscrByHT false
+HtCut 30.0
+
+JetPtForMhtAndHt 30.0
+JetEtaForMhtAndHt 5.0
+ApplyJetLooseIDforMhtAndHt false
+ApplyJetTightIDforMhtAndHt tight
+
+/// --- MC selection --- ///
+InitializeMCSelection false
+
+
+#######################################
+                Smear
+#######################################
+
+SmearTheJet 1
+JetEnergyScaleOffset 0.3
+
+GenMatchingDeltaR 0.4
+MuonMatchingDeltaR  0.3
+ElectronMatchingDeltaR  0.3
+TauMatchingDeltaR  0.3
+
+
+
+########################################
+               Jet1
+#######################################
+
+EtaCut 0. 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR  0.4
+Muon2MatchingDeltaR  0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR  0.3
+Electron2MatchingDeltaR  0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR  0.3
+Tau2MatchingDeltaR 0.3
+
+RemoveOverlapWithJs 1
+JMatchingDeltaR 0.8
+
+RemoveOverlapWithBs 1
+BJMatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+########################################
+                Jet2
+#######################################
+
+EtaCut 0. 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 0
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR  0.4
+Muon2MatchingDeltaR  0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR  0.3
+Electron2MatchingDeltaR  0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR  0.3
+Tau2MatchingDeltaR 0.3
+
+RemoveOverlapWithJs 1
+JMatchingDeltaR 0.8
+
+RemoveOverlapWithBs 1
+BJMatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+####################################
+          CentralJet
+###################################
+
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+####################################
+         FirstLeadingJet
+###################################
+
+DoDiscrByThisJet 1
+
+EtaCut 0.0 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+####################################
+         SecondLeadingJet
+###################################
+
+DoDiscrByThisJet 1
+
+EtaCut 0.0 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+###################################
+             BJet
+##################################
+
+EtaCut 0.0 2.4
+PtCut 30.0
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.3
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+ApplyJetBTaggingCSVv2 1
+ApplyJetBTaggingDeepCSV 0
+ApplyJetBTaggingDeepFlav 0
+
+JetBTaggingWP   medium
+JetBTaggingCut  0.8484
+MatchBToGen     0
+UseBtagSF       1
+RemoveBJetsFromJets 0
+
+##########################
+/////////////////////////////////
+            Smear
+/////////////////////////////////
+
+SmearTheParticle 0
+PtScaleOffset 1.
+PtResolutionOffset 1.
+EtaScaleOffset 1.
+EtaSigmaOffset 1.
+PhiScaleOffset 1.
+PhiSigmaOffset 1.
+EnergyScaleOffset 1.
+EnergySigmaOffset 1.
+
+MatchToGen 0
+GenMatchingDeltaR 0.3
+UseMotherID 0
+MotherID 23.0
+doEfficiencyPlots 0
+
+////////////////////////////////
+             Muon1
+///////////////////////////////
+
+//----RECO CUTS----//
+
+EtaCut 2.1
+PtCut 35.0 9999.9
+
+DoDiscrByTightID 1
+DoDiscrBySoftID 0
+
+DoDiscrByIsolation 1
+IsoSumPtCutValue 0.0 0.15
+
+//----MET TOPOLOGY CUTS----//
+
+DiscrIfIsZdecay 0
+
+DiscrByMetDphi 0
+MetDphiCut 1.0 3.15
+
+DiscrByMetMt 0
+MetMtCut 0. 100.
+
+################################
+         Muon1Tau1
+#############################
+
+DiscrByDeltaR    1
+DeltaRCut        0.3
+DiscrByOSLSType  OS
+DiscrByCosDphi   1      # dPhi is calculated between Muon1 and Tau1 
+CosDphiCut      -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut          0.8  1.0
+DiscrByMassReco            0
+HowCalculateMassReco       none     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut                    0.0   200.0
+DiscrByCDFzeta2D           0
+PZetaCutCoefficient        1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+DiscrByCosDphiPtAndMet     0     # dPhi between Muon1 and MET
+CosDphiPtAndMetCut        -1.00 -0.90
+
+# dPhi between leading lepton in the combination and MET
+DiscrByCosDphiLeadPtAndMet      1
+CosDphiLeadPtAndMetCut         -1.00 -0.95
+DiscrByAbsCosDphiLeadPtandMet   0
+AbsCosDphiLeadPtAndMetCut       0.90  1.00
+DiscrByMtLeadPtAndMet           1
+MtLeadPtAndMetCut               0.0   150.0
+DiscrByDiLepMassDeltaPt         1
+DiLeadMassDeltaPtCut            0.0   250.0
+
+/////////////////////////////////
+            Smear
+/////////////////////////////////
+
+SmearTheParticle 0
+ApplyETauFakeRateESSF 1
+
+PtScaleOffset 1.0
+PtSigmaOffset 1.
+EtaScaleOffset 1.
+EtaSigmaOffset 1.
+PhiScaleOffset 1.
+PhiSigmaOffset 1.
+EnergyScaleOffset 1.
+EnergySigmaOffset 1.
+
+MatchToGen 0
+GenMatchingDeltaR 0.2
+
+doEfficiencyPlots false
+
+//////////////////////////////
+            TauID
+////////////////////////////
+
+# Options for TauIDAlgorithm: Tau_idMVAoldDM2017v2 or Tau_idDeepTau2017v2p1
+TauIDAlgorithm Tau_idDeepTau2017v2p1
+
+//////////////////////////////
+            Tau1
+////////////////////////////
+
+//RECO CUTS///
+
+EtaCut 2.1
+PtCut 20.0 9999.9
+
+DoDzCut true
+DzCutThreshold 0.2
+
+DoDiscrByLeadTrack false
+LeadTrackThreshold 5.0
+
+DoDiscrByIsolation true
+# MVA: 1 = VVLoose, 2 = VLoose, 4 = Loose, 8 = Medium, 16 = Tight, 32 = VTight, 64 = VVTight
+# DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrByMinIsolation 32
+DiscrByMaxIsolation 1
+FlipIsolationRequirement true
+DiscrByProngType true
+ProngType  1or3hps
+decayModeFindingNewDMs true
+decayModeFinding false
+
+DoDiscrAgainstElectron true
+# MVA: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight, 16 = VTight
+# DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrAgainstElectron 16
+SelectTausThatAreElectrons false
+
+DoDiscrAgainstMuon true
+# MVA: 1 = Loose, 2 = Tight
+# DeepTau: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight
+DiscrAgainstMuon 8
+SelectTausThatAreMuons false
+
+DoDiscrByCrackCut false
+
+RemoveOverlapWithMuon1s true
+RemoveOverlapWithMuon2s true
+Muon1MatchingDeltaR 0.3
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s false
+RemoveOverlapWithElectron2s false
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+///---MET TOPOLOGY CUTS---//
+
+DiscrByMetDphi false
+MetDphiCut 1.3 3.15
+
+DiscrByMetMt false
+MetMtCut 0.0    50.0
+
+/////////////////////////////
+condor_rm -name lpcschedd1.fnal.gov 11282534.3
+condor_rm -name lpcschedd1.fnal.gov 11282534.28
+                                    11282534.67
+			            11282534.69
