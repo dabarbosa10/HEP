@@ -1,0 +1,458 @@
+***NRecoVertex        1   -1   ///at least one good vertex
+***NRecoTriggers1     1   -1   ///events must fire the HLT_IsoMu24 trigger
+***NRecoMuon1         0    0
+***NRecoElectron1     1    1
+NRecoElectron2        0   -1
+***NRecoTau1          1    1
+NRecoTau2             0   -1
+***NRecoBJet          1   -1
+***NElectron1Tau1Combinations    1    1
+
+
+NRecoMuon2            0   -1
+NDiMuonCombinations        0   -1
+METCut        0   -1   ///met cut
+NRecoJet1             0   -1
+NRecoJet2             0   -1
+NDiJetCombinations    0   -1
+NRecoMuon2            0   -1
+NRecoCentralJet       0   -1
+NRecoTriggers2        0   -1           ///only 0 or 1
+NRecoSecondLeadingJet 0   -1    ///only 0 or 1
+NDiElectronCombinations    0   -1
+NDiTauCombinations         0   -1
+NRecoFirstLeadingJet       0   -1   ///only 0 or 1
+NRecoSecondLeadingJet      0   -1    ///only 0 or 1
+NLeadJetCombinations       0   -1   ///only 0 or 1
+NMuon1Tau1Combinations        0   -1
+NMuon1Tau2Combinations        0   -1
+NMuon2Tau1Combinations        0   -1
+NMuon2Tau2Combinations        0   -1_	
+NElectron1Tau2Combinations    0   -1
+NElectron2Tau1Combinations    0   -1
+NElectron2Tau2Combinations    0   -1
+NMuon1Electron1Combinations   0   -1
+NMuon1Electron2Combinations   0   -1
+NMuon2Electron1Combinations   0   -1
+NMuon2Electron2Combinations   0   -1
+
+////////////////////////////////
+             Elec1
+///////////////////////////////
+
+//---RECO CUTS---///
+
+EtaCut 2.1
+PtCut 55.0 9999.9
+
+DoDiscrByIsolation 0
+IsoSumPtCutValue 0.0 0.15
+
+//(0:fail, 1:veto, 2:loose, 3:medium, 4:tight)
+DoDiscrByCBID true
+DiscrByCBID 4
+
+DoDiscrBymvaID false
+DiscrBymvaWP80 0
+DiscrBymvaWP90 1
+DiscrBymvaWPL  0
+
+DoDiscrByHEEPID false
+
+///---MET TOPOLOGY CUTS---///
+
+DiscrIfIsZdecay 0
+
+DiscrByMetDphi 0
+MetDphiCut 1.70 3.15
+
+DiscrByMetMt 0
+MetMtCut 0. 40.
+
+
+#####################################
+          Electron1Jet1
+#####################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No
+DiscrByCosDphi   0
+CosDphiCut       -1.00   -0.95
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByMassReco  1
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   999999.
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+#########################################
+             Electron1Jet2
+#########################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No
+DiscrByCosDphi   0
+CosDphiCut       -1.00   -0.95
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByMassReco  0
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+#######################################
+          Electron1Tau1
+#####################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  OS
+DiscrByCosDphi   1
+CosDphiCut       -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByCosDphiLeadPtAndMet true
+CosDphiLeadPtAndMetCut -1.01 -0.95
+
+DiscrByMtLeadPtAndMet true
+MtLeadPtAndMetCut 150.0 9999.0
+
+
+DiscrByMassReco  false
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+DiscrByDiLepMassDeltaPt 0
+DiLeadMassDeltaPtCut 0.0 9999.0
+
+                Smear
+#######################################
+
+SmearTheJet 0
+JetEnergyScaleOffset 0.3
+
+MuonMatchingDeltaR  0.3
+ElectronMatchingDeltaR  0.3
+TauMatchingDeltaR  0.3
+
+#################################
+        Wjet
+#################################
+
+EtaCut 0.0 3.5
+PtCut 150.0
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.8
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+ApplyJetWTagging 1
+JetWmassCut 65 105
+########################################
+                Smear
+#######################################
+
+SmearTheJet 1
+JetEnergyScaleOffset 0.3
+
+GenMatchingDeltaR 0.4
+MuonMatchingDeltaR  0.3
+ElectronMatchingDeltaR  0.3
+TauMatchingDeltaR  0.3
+
+
+
+########################################
+               Jet1
+#######################################
+
+EtaCut 0. 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR  0.4
+Muon2MatchingDeltaR  0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR  0.3
+Electron2MatchingDeltaR  0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR  0.3
+Tau2MatchingDeltaR 0.3
+
+RemoveOverlapWithJs 1
+JMatchingDeltaR 0.8
+
+RemoveOverlapWithBs 1
+BJMatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+########################################
+                Jet2
+#######################################
+
+EtaCut 0. 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 0
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR  0.4
+Muon2MatchingDeltaR  0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR  0.3
+Electron2MatchingDeltaR  0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR  0.3
+Tau2MatchingDeltaR 0.3
+
+RemoveOverlapWithJs 1
+JMatchingDeltaR 0.8
+
+RemoveOverlapWithBs 1
+BJMatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+####################################
+          CentralJet
+###################################
+
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+####################################
+         FirstLeadingJet
+###################################
+
+DoDiscrByThisJet 1
+
+EtaCut 0.0 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+####################################
+         SecondLeadingJet
+###################################
+
+DoDiscrByThisJet 1
+
+EtaCut 0.0 5.0
+PtCut 30.0
+
+ApplyLooseID 0
+ApplyTightID 1
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto false
+
+###################################
+             BJet
+##################################
+
+EtaCut 0.0 2.4
+PtCut 30.0
+
+RemoveOverlapWithMuon1s 1
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.4
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 0
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+Apply2017EEnoiseVeto true
+
+#### 2016 CVS : loose = 0.5426, medium = 0.8484, tight = 0.9535
+###### 2017 DeepF : loose = 0.0521, medium = 0.3033, tight = 0.7489
+###### 2018 DeepF : loose = 0.0494, medium = 0.2770, tight = 0.7264
+#
+
+ApplyJetBTaggingCSVv2 0
+ApplyJetBTaggingDeepCSV 0
+ApplyJetBTaggingDeepFlav 1
+
+JetBTaggingWP   tight
+JetBTaggingCut  0.7264
+MatchBToGen     0
+UseBtagSF       1
+RemoveBJetsFromJets 0
+
+//////////////////////////////
+            Tau1
+////////////////////////////
+
+//RECO CUTS///
+
+EtaCut 2.1
+PtCut 20.0 1000.0
+
+DoDzCut true
+DzCutThreshold 0.2
+
+DoDiscrByLeadTrack false
+LeadTrackThreshold 5.0
+
+DoDiscrByIsolation true
+// MVA: 1 = VVLoose, 2 = VLoose, 4 = Loose, 8 = Medium, 16 = Tight, 32 = VTight, 64 = VVTight
+// DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrByMinIsolation 32
+DiscrByMaxIsolation 0
+FlipIsolationRequirement false
+DiscrByProngType true
+ProngType  1or3hps
+decayModeFindingNewDMs false
+decayModeFinding true
+
+DoDiscrAgainstElectron true
+// MVA: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight, 16 = VTight
+// DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrAgainstElectron 16
+SelectTausThatAreElectrons false
+
+DoDiscrAgainstMuon true
+// MVA: 1 = Loose, 2 = Tight
+// DeepTau: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight
+DiscrAgainstMuon 8
+SelectTausThatAreMuons false
+
+DoDiscrByCrackCut false
+
+RemoveOverlapWithMuon1s true
+RemoveOverlapWithMuon2s true
+Muon1MatchingDeltaR 0.3
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s true
+RemoveOverlapWithElectron2s true
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+Q
+
+
+
+
+
