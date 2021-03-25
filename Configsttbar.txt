@@ -1,0 +1,528 @@
+***NRecoVertex        1   -1   ///at least one good vertex
+***NRecoTriggers1     1   -1   ///events must fire the HLT_IsoMu24 trigger
+***NRecoMuon1         0    0
+***NRecoElectron1     1    1
+NRecoElectron2        0   -1
+***NRecoTau1          1    1
+NRecoTau2             0   -1
+***NRecoBJet          1   -1
+***NElectron1Tau1Combinations    1    1
+***NDiJetCombinations    0   0
+
+#####################################
+              DiTau
+#######################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No             #### OS or LS
+
+DiscrByCosDphi   false                  # dPhi is calculated between Tau1 and Tau2 
+CosDphiCut       -1.00   -0.80
+
+DiscrByMassReco  true
+HowCalculateMassReco  VectorSumOfVisProductAndMet      ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   100.0
+
+DiscrByCDFzeta2D          false
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     false
+DeltaPtDivSumPtCutValue    0.4  1.
+DiscrByDeltaPt             false
+DeltaPtCutValue            50.0   1000.0
+
+DiscrByCosDphiPtAndMet false     # dPhi between Tau1 and MET
+CosDphiPtAndMetCut  -1.00 -0.90
+
+# dPhi between leading lepton in the combination and MET
+DiscrByCosDphiLeadPtAndMet false
+CosDphiLeadPtAndMetCut -1.00 -0.90
+
+DiscrByAbsCosDphiLeadPtandMet   true
+AbsCosDphiLeadPtAndMetCut       -1.00  -0.90
+
+DiscrByMtLeadPtAndMet false
+MtLeadPtAndMetCut     0.0   9000.0
+
+DiscrByDiLepMassDeltaPt false
+DiLeadMassDeltaPtCut   0.0   9000.0
+
+# Currently not implemented in the Analyzer:
+# DiscrByCosDphi_DeltaPtAndMet   false
+# CosDphi_DeltaPtMetCut  0.8  1.0
+
+
+
+######################################
+               DiMuon
+#####################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  OS
+DiscrByCosDphi   0                              # dPhi is calculated between Muon1 and Muon2 
+CosDphiCut       -1.00   -0.95
+
+DiscrByMassReco  true
+HowCalculateMassReco NONE     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          75.0   105.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+
+DiscrByDeltaPt             true
+DeltaPtCutValue            30.0   9999.0
+
+DiscrByCosDphiPtAndMet false     # dPhi between Muon1 and MET
+CosDphiPtAndMetCut  -1.00 -0.90
+
+# dPhi between leading lepton in the combination and MET
+DiscrByCosDphiLeadPtAndMet false
+CosDphiLeadPtAndMetCut -1.00 -0.90
+
+DiscrByAbsCosDphiLeadPtandMet   false
+AbsCosDphiLeadPtAndMetCut       0.90  1.00
+
+DiscrByMtLeadPtAndMet false
+MtLeadPtAndMetCut     0.0   9000.0
+
+DiscrByDiLepMassDeltaPt false
+DiLeadMassDeltaPtCut   0.0   9000.0
+
+# Currently not implemented in the Analyzer:
+# DiscrByCosDphi_DeltaPtAndMet   false
+# CosDphi_DeltaPtMetCut  0.8  1.0
+
+#####################################
+               DiElectron
+#######################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No
+DiscrByCosDphi   true                           # dPhi is calculated between Electron1 and Electron2 
+CosDphiCut       -1.00   -0.95
+
+DiscrByMassReco  0
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          150.0   10000.0
+
+DiscrByCDFzeta2D          false
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    9999.0
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+DiscrByCosDphiPtAndMet false     # dPhi between Electron1 and MET
+CosDphiPtAndMetCut  -1.00 -0.90
+
+# dPhi between leading lepton in the combination and MET
+DiscrByCosDphiLeadPtAndMet false
+CosDphiLeadPtAndMetCut -1.00 -0.90
+
+DiscrByAbsCosDphiLeadPtandMet   false
+AbsCosDphiLeadPtAndMetCut       0.90  1.00
+
+DiscrByMtLeadPtAndMet false
+MtLeadPtAndMetCut     0.0   9000.0
+
+DiscrByDiLepMassDeltaPt false
+DiLeadMassDeltaPtCut   0.0   9000.0
+
+# Currently not implemented in the Analyzer:
+# DiscrByCosDphi_DeltaPtAndMet   false
+# CosDphi_DeltaPtMetCut  0.8  1.0
+
+######################################
+               DiJet
+#####################################
+
+DiscrByDeltaR true
+DeltaRCut 0.3
+
+DiscrByDeltaEta      true
+DeltaEtaCut         3.8  9999.0
+
+DiscrByDeltaPhi      false
+DeltaPhiCut         0    9999.0
+
+DiscrByOSEta true
+
+DiscrByCosDphi false
+CosDphiCut  -1.00 -0.80
+
+DiscrByMassReco true
+MassCut 400.0 9999.0
+
+RejectForwardDiJetPairs false
+ForwardEtaRange 3.0 5.0
+
+///////////////////////////
+              Smear
+/////////////////////////////////
+
+SmearTheParticle 0
+PtScaleOffset 1.
+PtSigmaOffset 1.
+EtaScaleOffset 1.
+EtaSigmaOffset 1.
+PhiScaleOffset 1.
+PhiSigmaOffset 1.
+EnergyScaleOffset 1.
+EnergySigmaOffset 1.
+
+MatchToGen 0
+GenMatchingDeltaR 0.1
+UseMotherID 1
+MotherID 23.
+doEfficiencyPlots false
+////////////////////////////////
+             Elec1
+///////////////////////////////
+
+//---RECO CUTS---///
+
+EtaCut 2.1
+PtCut 55.0 9999.9
+
+DoDiscrByIsolation 1
+IsoSumPtCutValue 0.0 0.15
+
+//(0:fail, 1:veto, 2:loose, 3:medium, 4:tight)
+DoDiscrByCBID false
+DiscrByCBID 4
+
+DoDiscrBymvaID false
+DiscrBymvaWP80 0
+DiscrBymvaWP90 1
+DiscrBymvaWPL  0
+
+DoDiscrByHEEPID true
+
+///---MET TOPOLOGY CUTS---///
+
+DiscrIfIsZdecay 0
+
+DiscrByMetDphi 0
+MetDphiCut 1.70 3.15
+
+DiscrByMetMt 0
+MetMtCut 0. 40.
+
+////////////////////////////////
+             Elec2
+####################################
+          Electron1Jet1
+#####################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No
+DiscrByCosDphi   0
+CosDphiCut       -1.00   -0.95
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByMassReco  1
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   999999.
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+#########################################
+             Electron1Jet2
+#########################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No
+DiscrByCosDphi   0
+CosDphiCut       -1.00   -0.95
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByMassReco  0
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+#######################################
+            Electron2Jet2
+#########################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+
+DiscrByOSLSType  No
+DiscrByCosDphi   0
+CosDphiCut       -1.00   -0.95
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByMassReco  0
+HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+
+
+###################################
+          Electron1Tau1
+#####################################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3
+DiscrByOSLSType  OS
+DiscrByCosDphi   1                      # dPhi is calculated between Electron1 and Tau1 
+CosDphiCut       -1.00   -0.98
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+DiscrByMassReco  false
+HowCalculateMassReco None   ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt             0
+DeltaPtCutValue            30.0   1000.0
+DiscrByCosDphiPtAndMet 0     # dPhi between Electron1 and MET
+CosDphiPtAndMetCut  -1.00 -0.90
+
+# dPhi between leading lepton in the combination and MET
+DiscrByCosDphiLeadPtAndMet 1
+CosDphiLeadPtAndMetCut -1.00 -0.95
+DiscrByAbsCosDphiLeadPtandMet   0
+AbsCosDphiLeadPtAndMetCut       0.90  1.00
+DiscrByMtLeadPtAndMet 1
+MtLeadPtAndMetCut     150.0   9999.0
+
+DiscrByDiLepMassDeltaPt 0
+DiLeadMassDeltaPtCut   0.0   9000.0
+
+#######################################
+                Smear
+#######################################
+
+SmearTheJet 0
+JetEnergyScaleOffset 0.3
+
+MuonMatchingDeltaR  0.3
+ElectronMatchingDeltaR  0.3
+TauMatchingDeltaR  0.3
+
+#################################
+        Wjet
+#################################
+
+EtaCut 0.0 3.5
+PtCut 150.0
+
+RemoveOverlapWithMuon1s 0
+RemoveOverlapWithMuon2s 0
+Muon1MatchingDeltaR 0.8
+Muon2MatchingDeltaR 0.3
+
+RemoveOverlapWithElectron1s 1
+RemoveOverlapWithElectron2s 0
+Electron1MatchingDeltaR 0.3
+Electron2MatchingDeltaR 0.3
+
+RemoveOverlapWithTau1s 0
+RemoveOverlapWithTau2s 0
+Tau1MatchingDeltaR 0.3
+Tau2MatchingDeltaR 0.3
+
+ApplyJetWTagging 1
+JetWmassCut 65 105
+JetTau2Tau1Ratio 0 0.55
+
+
+           VBFSUSY
+##################################
+
+DiscrByMass false
+MassCut 500.0 10000.0
+
+DiscrByPt true
+PtCut 0 10000.0
+DiscrByDeltaEta false
+DeltaEtaCut 4.0 10000.0
+DiscrByDeltaPhi false
+DeltaPhiCut 1.3. 10000.0
+
+DiscrByOSEta 0
+
+DiscrByR1 0
+R1Cut 0.85 999.0
+DiscrByR2 false
+R2Cut 0.0 3.6
+DiscrByAlpha false
+AlphaCut 0.5 5.0
+
+DiscrByDphi1 false
+Dphi1Cut 0.2 999.9
+DiscrByDphi2 true
+Dphi2Cut 0.6 9999.5
+
+
+#################################
+                Run
+####################################
+
+CalculatePUSystematics false
+DataHistos PileUpReweighting2017.root       # 2016: PileUpReweighting2016.root, 2017: PileUpReweighting2017.root, 2018: PileUpReweighting2018.root
+MCHistos mc2017_pileup_Dec2018reReco.root   # 2016: mc2016_pileup_Dec2018reReco.root, 2017: mc2017_pileup_Dec2018reReco.root, 2018: 2016: mc2018_pileup_Dec2018reReco.root
+DataPUHistName pileup
+MCPUHistName pileup
+
+SpecialMCPUCalculation false
+SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6.root
+/// SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
+
+ApplyTauIDSF false
+TauIdSFsByDM false # Tau ID scale factors that are decay mode (DM) - dependent. If using di-tau triggers and tau-pt > 40 GeV, this are the recommended SFs.
+TauSFforEmbeddedSamples false
+
+ApplyTauAntiEleSF false
+ApplyTauAntiMuSF false
+
+isData true
+ApplyGenWeight  false
+UsePileUpWeight false
+
+ApplyISRZBoostSF false                          # Z-boost weight corrections derived for ISR+stau analysis (SUS-19-002)
+ApplySUSYZBoostSF false                         # Official Z-boost weight corrections derived by the SUSY PAG.
+ApplyVBFSusyZBoostSF false                      # Weights derived by the VBF SUSY team - Run II
+
+ApplyL1PrefiringWeight false
+UseJetEMPt false
+
+/// ------ Data-specific cuts ------///
+FilterDataByGoldenJSON true
+ApplyHEMVeto2018 false
+
+/// ------ MC Gen-level cuts ------///
+/// --- HT filter --- ///
+DiscrByGenHT false
+LowerGenHtCut 0.0
+UpperGenHtCut 100.0
+
+/// --- dilepton mass filter --- ///
+DiscrByGenDileptonMass false
+GenDilepMassRange 50.0 100.0
+
+/// ------ Triggers ----- ///
+///---Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf
+///--Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf
+///---UseTriggerWildcard true
+
+///.---Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf
+///---Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
+
+/////-----FOR 2017 and 2018 -------////
+Trigger1FirstRequirement HLT_Ele32_WPTight_Gsf
+Trigger1SecondRequirement HLT_Ele35_WPTight_Gsf
+UseTriggerWildcard true
+
+Trigger2FirstRequirement HLT_Ele32_WPTight_Gsf
+Trigger2SecondRequirement HLT_Ele35_WPTight_Gsf
+
+
+///--Trigger1FirstRequirement HLT_DoubleMediumIsoPFTau
+///--Trigger1SecondRequirement HLT_DoubleMediumCombinedIsoPFTau
+///--UseTriggerWildcard true
+
+
+///---Treat Muon as Neutrino---///
+
+TreatMuonsAsNeutrinos 0
+TreatOnlyOneMuonAsNeutrino 0
+TreatMuonsAsTaus 0
+
+///-----MET cuts------///
+ApplyMetFilters false
+MT2Mass 0.
+DiscrByMet false
+MetCut 250.0 10000.0
+
+DiscrByMHT false
+MhtCut 50.0
+DiscrByHT false
+HtCut 30.0
+
+JetPtForMhtAndHt 30.0
+JetEtaForMhtAndHt 5.0
+
+ApplyJetLooseIDforMhtAndHt false
+ApplyJetTightIDforMhtAndHt false
+
+/// --- MC selection --- ///
+InitializeMCSelection false
+/// ------ Triggers ----- ///
+///---Trigger1FirstRequirement HLT_Ele27_WPTight_Gsf
+///--Trigger1SecondRequirement HLT_Ele27_WPTight_Gsf
+///---UseTriggerWildcard true
+
+///.---Trigger2FirstRequirement HLT_Ele27_WPTight_Gsf
+///---Trigger2SecondRequirement HLT_Ele27_WPTight_Gsf
+
+
+/////-----FOR 2017 and 2018 -------////
+Trigger1FirstRequirement HLT_Ele32_WPTight_Gsf
+Trigger1SecondRequirement HLT_Ele35_WPTight_Gsf
+UseTriggerWildcard true
+
+Trigger2FirstRequirement HLT_Ele32_WPTight_Gsf
+Trigger2SecondRequirement HLT_Ele35_WPTight_Gsf
+
+
+
