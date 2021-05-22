@@ -1,0 +1,24 @@
+#DY Mass binned
+#/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM
+#/DYJetsToLL_M-100to200_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-200to400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext2-v1/NANOAODSIM
+#/DYJetsToLL_M-400to500_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-500to700_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-700to800_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-800to1000_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-1000to1500_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-1500to2000_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+#/DYJetsToLL_M-2000to3000_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM
+
+
+#files/DYJetsToLL_M-10to50.root         DY+Jets.root    18810           1       bg      1.00
+#files/DYJetsToLL_M-50.root             DY+Jets.root    6005            1       bg      1.00
+#files/DYJetsToLL_M-100to200.root       DY+Jets.root    226.6           1       bg      1.00
+#files/DYJetsToLL_M-200to400.root       DY+Jets.root    7.77            1       bg      1.00
+#files/DYJetsToLL_M-400to500.root       DY+Jets.root    0.4065          1       bg      1.00
+#files/DYJetsToLL_M-500to700.root       DY+Jets.root    0.2334          1       bg      1.00
+#files/DYJetsToLL_M-700to800.root       DY+Jets.root    0.03614         1       bg      1.00
+#files/DYJetsToLL_M-800to1000.root      DY+Jets.root    0.03047         1       bg      1.00
+#files/DYJetsToLL_M-1000to1500.root     DY+Jets.root    0.01636         1       bg      1.00
+#files/DYJetsToLL_M-1500to2000.root     DY+Jets.root    0.00218         1       bg      1.00
+#files/DYJetsToLL_M-2000to3000.root     DY+Jets.root    0.0005156       1       bg      1.00
