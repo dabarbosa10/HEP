@@ -1,0 +1,43 @@
+\begin{table}[h]
+\centering
+\scalebox{0.6}{
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline\hline
+Bines [GeV] & DY + Jets & SingleTop & VV & W + Jets & t$\bar{t}$ & QCD & \textbf{Total} \\
+\hline
+0-100&0&0&0.00611582&0.00598068&0&0&0.0120965\\
+\hline
+100-300&142.997&12.2304&24.7848&111.115&51.433&15.6892&358.25\\
+\hline
+300-500&70.1957&12.9888&25.2086&36.7085&47.1&12.4883&204.69\\
+\hline
+500-700&14.735&3.44207&10.541&10.7901&8.75449&5.58945&53.852\\
+\hline
+700-900&4.11922&0.969281&2.58857&4.43836&1.13648&1.21092&14.4628\\
+\hline
+900-1500&2.33105&1.11487&2.32186&1.19236&0.394439&1.27817&8.63275\\
+\hline
+1500-4000&0.215741&0&0.20519&0.0405913&0.377092&-0.0392491&0.799365\\
+\hline
+\hline
+\textbf{Total}&234.594&30.7454&65.6561&164.291&109.196&36.2168&640.699\\
+\hline
+\end{tabular}}
+\end{table}
+
+
+
+
+
+
+\begin{table}[h]
+\centering
+\scalebox{0.6}{
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline\hline
+& DY + Jets & SingleTop & VV & W + Jets & t$\bar{t}$ & QCD & \textbf{Total} \\
+\hline
+\textbf{log.txt} &234.594&30.7454&65.6561&164.291&109.196&36.2168&640.699\\
+\hline
+\end{tabular}}
+\end{table}
