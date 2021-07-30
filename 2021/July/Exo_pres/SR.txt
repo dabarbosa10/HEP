@@ -1,0 +1,75 @@
+Using the different control regions, the scale factor as well as the QCD estimations, we can 
+observe in Figure \ref{fig:etau_SR} as well as in table \ref{tab:eTau_SR} the expected background contributions in the signal region for all years.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.32\textwidth]{plots_eTau/2016/Plots_July_2021/etau_SR16.pdf}
+    \includegraphics[width=0.32\textwidth]{plots_eTau/2017/Plots_July_2021/etau_SR17.pdf}
+    \includegraphics[width=0.32\textwidth]{plots_eTau/2018/Plots_July_2021/etau_SR18.pdf}
+\caption{Signal Region for 2016, 2017 and 2018.}
+\label{fig:etau_SR}
+\end{figure}
+
+
+
+
+
+\begin{table}[h!]
+\centering{
+\caption{Event yields for the SR with QCD data driven estimations for2016, 2017 and 2018 data-sets.}
+\resizebox{0.99\textwidth}{!}{
+\begin{tabular}{ccc}
+\begin{tabular}{lcr}
+\hline\hline
+Process   & Events (2016)          & \%   \\ 
+\hline
+W+jets    & 164.3$\pm$43.3 & 26\% \\ 
+Drell-Yan & 234.6$\pm$16.4 & 37\% \\ 
+$t\bar{t}$      & 109.2$\pm$6.2 & 17\% \\ 
+SingleTop & 30.7$\pm$2.4 & 5\% \\ 
+Diboson   & 65.7$\pm$3.4 & 10\% \\ 
+QCD       & 36.2$\pm$5.0 & 6\% \\ 
+\hline
+TotalBack.& 640.7$\pm$47.2 & 100\% \\ \hline\hline
+\end{tabular} & 
+
+\begin{tabular}{lcr}
+\hline\hline
+Process   & Events   (2017)       & \%   \\ 
+\hline
+W+jets    & 254.2$\pm$54.4 & 33\% \\ 
+Drell-Yan & 205.5$\pm$18.7 & 26\% \\ 
+$t\bar{t}$     & 148.8$\pm$2.7 & 19\% \\ 
+SingleTop & 36.2$\pm$2.7 & 5\% \\ 
+Diboson   & 85.0$\pm$4.2 & 11\% \\ 
+QCD       & 49.9$\pm$4.9 & 6\% \\ 
+\hline
+TotalBack.& 775.6$\pm$58.3 & 100\% \\ 
+\hline\hline
+\end{tabular} & 
+
+\begin{tabular}{lcr}
+\hline\hline
+Process   & Events (2018)         & \%   \\ 
+\hline
+W+jets    & 280.3$\pm$40.1 & 31\% \\ 
+Drell-Yan & 248.8$\pm$21.1 & 27\% \\ 
+$t\bar{t}$      & 168.2$\pm$4.2 & 18\% \\ 
+SingleTop & 48.5$\pm$3.9 & 5\% \\ 
+Diboson   & 118.3$\pm$3.2 & 13\% \\ 
+QCD       & 48.4$\pm$5.0 & 5\% \\ 
+\hline
+TotalBack.& 912.5$\pm$46.0 & 100\% \\ 
+\hline\hline
+\end{tabular}
+\end{tabular}
+\label{tab:eTau_SR}
+}}
+\end{table}
+
+
+
+
+
+
