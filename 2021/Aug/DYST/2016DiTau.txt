@@ -1,0 +1,182 @@
+***NRecoVertex        1   -1
+***NRecoTriggers1     1   -1
+***NRecoMuon1         0    0
+***NRecoElectron1     0    0
+***NRecoTau1          2    2
+***NRecoTau2          2    2
+***NRecoBJet          0    0
+***METCut             1   -1
+***NDiTauCombinations         1   -1
+***NDiJetCombinations    0    0
+
+#########Di Tau#########
+DiscrByDeltaR true
+DeltaRCut      0.3
+
+DiscrByOSLSType  LS     #### OS or LS
+
+DiscrByCosDphi   true           # dPhi is calculated between Tau1 and Tau2 
+CosDphiCut       -1.00   -0.95
+
+DiscrByMassReco  true
+HowCalculateMassReco  InvariantMass     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut         100.0   9999.9
+
+DiscrByCDFzeta2D          false
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     false
+DeltaPtDivSumPtCutValue    0.4  1.
+
+DiscrByDeltaPt             false
+DeltaPtCutValue            50.0   1000.0
+
+DiscrByCosDphiPtAndMet false     # dPhi between Tau1 and MET
+CosDphiPtAndMetCut  -1.00 -0.90
+
+# dPhi between leading lepton in the combination and MET
+DiscrByCosDphiLeadPtAndMet false
+CosDphiLeadPtAndMetCut -1.00 -0.95
+
+DiscrByAbsCosDphiLeadPtandMet   false
+AbsCosDphiLeadPtAndMetCut       0.90  1.00
+
+DiscrByMtLeadPtAndMet false
+MtLeadPtAndMetCut     0.0   9999.0
+
+DiscrByDiLepMassDeltaPt false
+DiLeadMassDeltaPtCut   0.0   9999.0
+
+#####################################
+               DiJet
+#####################################
+
+DiscrByDeltaR true
+DeltaRCut 0.4
+
+DiscrByDeltaEta      true
+DeltaEtaCut         4.2  9999.0
+
+DiscrByDeltaPhi      false
+DeltaPhiCut         0    9999.0
+
+DiscrByOSEta true
+
+DiscrByCosDphi false
+CosDphiCut  -1.00 -0.80
+
+DiscrByMassReco true
+MassCut 500.0 9999.0
+
+
+
+///////////////////////
+            Tau1
+////////////////////////////
+
+//RECO CUTS///
+
+EtaCut 2.1
+PtCut 70.0 9999.9
+
+DoDzCut false
+DzCutThreshold 0.2
+
+DoDiscrByLeadTrack false
+LeadTrackThreshold 5.0
+
+DoDiscrByIsolation true
+// MVA: 1 = VVLoose, 2 = VLoose, 4 = Loose, 8 = Medium, 16 = Tight, 32 = VTight, 64 = VVTight
+// DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrByMinIsolation 32
+DiscrByMaxIsolation 2
+FlipIsolationRequirement false
+DiscrByProngType true
+ProngType  1or3hps
+decayModeFindingNewDMs true
+decayModeFinding false
+
+DoDiscrAgainstElectron true
+// MVA: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight, 16 = VTight
+// DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrAgainstElectron 16
+SelectTausThatAreElectrons false
+
+DoDiscrAgainstMuon true
+// MVA: 1 = Loose, 2 = Tight
+// DeepTau: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight
+DiscrAgainstMuon 8
+SelectTausThatAreMuons false
+
+DoDiscrByCrackCut false
+
+RemoveOverlapWithMuon1s true
+RemoveOverlapWithMuon2s true
+Muon1MatchingDeltaR 0.3
+Muon2MatchingDeltaR 0.3
+
+////////////////////////
+             Tau2
+//////////////////////////////
+
+//----RECO CUTS----////
+
+EtaCut 2.1
+PtCut 70.0 9999.9
+
+DoDzCut false
+DzCutThreshold 0.2
+
+DoDiscrByLeadTrack false
+LeadTrackThreshold 5.0
+
+DoDiscrByIsolation true
+// MVA: 1 = VVLoose, 2 = VLoose, 4 = Loose, 8 = Medium, 16 = Tight, 32 = VTight, 64 = VVTight
+// DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrByMinIsolation 32
+DiscrByMaxIsolation 2
+FlipIsolationRequirement false
+DiscrByProngType true
+ProngType  1or3hps
+decayModeFindingNewDMs true
+decayModeFinding false
+
+DoDiscrAgainstElectron true
+// MVA: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight, 16 = VTight
+// DeepTau: 1 = VVVLoose, 2 = VVLoose, 4 = VLoose, 8 = Loose, 16 = Medium, 32 = Tight, 64 = VTight, 128 = VVTight
+DiscrAgainstElectron 16
+SelectTausThatAreElectrons false
+
+DoDiscrAgainstMuon true
+// MVA: 1 = Loose, 2 = Tight
+// DeepTau: 1 = VLoose, 2 = Loose, 4 = Medium, 8 = Tight
+DiscrAgainstMuon 8
+SelectTausThatAreMuons false
+
+DoDiscrByCrackCut 0
+
+/// ------ Triggers ----- ///
+Trigger1FirstRequirement HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+Trigger1SecondRequirement HLT_DoubleMediumChargedIsoPFTau
+UseTriggerWildcard true
+
+Trigger2FirstRequirement HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+Trigger2SecondRequirement HLT_DoubleMediumChargedIsoPFTau
+
+///-----MET cuts------///
+ApplyMetFilters true
+ApplyMETxyShiftCorrections true
+MT2Mass 0.
+DiscrByMet true
+MetCut 30.0 9999.9
+
+Trigger1FirstRequirement HLT_DoubleMediumChargedIsoPFTau
+Trigger1SecondRequirement HLT_DoubleMediumChargedIsoPFTau
+UseTriggerWildcard true
+
+Trigger1FirstRequirement HLT_DoubleMediumChargedIsoPFTau
+Trigger1SecondRequirement HLT_DoubleMediumChargedIsoPFTauHPS
+UseTriggerWildcard true
+
