@@ -1,0 +1,102 @@
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 207594779.9 $\pm$ 4904.4 & 9469205.5 $\pm$ 332.5 & 4348940.8 $\pm$ 404.0 & 2121866156.9 $\pm$ 54379.4 & 22645414.1 $\pm$ 1027.1 \\ \hline
+NRecoTriggers1 & 8874464.3 $\pm$ 3471.5 & 79485.1 $\pm$ 107.7 & 50970.5 $\pm$ 108.3 & 1874466.1 $\pm$ 5597.0 & 472229.9 $\pm$ 397.7 \\ \hline
+NRecoMuon1 & 8746981.2 $\pm$ 3448.3 & 76953.4 $\pm$ 105.8 & 48899.9 $\pm$ 107.2 & 1805169.1 $\pm$ 5472.5 & 448678.6 $\pm$ 387.8 \\ \hline
+NRecoElectron1 & 7350412.7 $\pm$ 3206.2 & 55139.6 $\pm$ 87.2 & 28256.6 $\pm$ 93.0 & 1369406.2 $\pm$ 4997.0 & 308662.4 $\pm$ 322.5 \\ \hline
+NRecoTau1 & 1406.3 $\pm$ 34.7 & 24.0 $\pm$ 2.2 & 39.5 $\pm$ 2.1 & 142.2 $\pm$ 25.2 & 117.4 $\pm$ 6.3 \\ \hline
+NRecoTau2 & 1406.3 $\pm$ 34.7 & 24.0 $\pm$ 2.2 & 39.5 $\pm$ 2.1 & 142.2 $\pm$ 25.2 & 117.4 $\pm$ 6.3 \\ \hline
+NRecoBJet & 1347.8 $\pm$ 34.5 & 10.5 $\pm$ 1.4 & 36.4 $\pm$ 2.0 & 140.9 $\pm$ 25.2 & 41.8 $\pm$ 3.8 \\ \hline
+METCut & 890.1 $\pm$ 26.9 & 10.0 $\pm$ 1.4 & 30.2 $\pm$ 1.8 & 118.6 $\pm$ 23.0 & 37.2 $\pm$ 3.6 \\ \hline
+NDiTauCombinations & 348.2 $\pm$ 22.2 & 4.9 $\pm$ 1.0 & 8.9 $\pm$ 1.1 & 73.7 $\pm$ 18.9 & 14.0 $\pm$ 2.2 \\ \hline
+NDiJetCombinations & 346.6 $\pm$ 22.1 & 4.9 $\pm$ 1.0 & 8.8 $\pm$ 1.1 & 73.7 $\pm$ 18.9 & 13.1 $\pm$ 2.1 \\ \hline
+NRecoJet2 & 261.5 $\pm$ 19.5 & 0.7 $\pm$ 0.4 & 3.4 $\pm$ 0.7 & 42.8 $\pm$ 14.9 & 2.8 $\pm$ 1.0 \\ \hline
+\end{tabular}
+
+
+bool Analyzer::passGenMassFilterZ(float mass_lowbound, float mass_upbound){
+
+  if(!isZsample) return true;
+
+   std::vector<uint> genleptonindices;
+   int genpart_id = 0, genmotherpart_idx = 0, genmotherpart_id = 0;
+
+   // std::cout << "---------------------------" << std::endl;
+   // Loop over all generator level particles to look for the leptons that come from a Z:
+   for(size_t idx = 0; idx < _Gen->size(); idx++) {
+     // Get the particle PDG ID
+     genpart_id = abs(_Gen->pdg_id[idx]);
+     // Find the index of the mother particle
+     genmotherpart_idx = _Gen->genPartIdxMother[idx];
+
+     // Find the id of the mother particle using the index we just retrieved
+     genmotherpart_id = _Gen->pdg_id[genmotherpart_idx];
+
+     // std::cout << "part_idx = " << idx << ", genpart_id = " << genpart_id << ", status = " << _Gen->status[idx] << ", mother part_idx = " << genmotherpart_idx << ", mother genpart_id = " << genmotherpart_id << std::endl;
+
+     // Only select those particles that are electrons (11), muons (13) or taus (15)
+     if(! ( ( (genpart_id == 11 || genpart_id == 13) && _Gen->status[idx] == 1) || (genpart_id == 15 && _Gen->status[idx] == 2) ) )  continue;
+     // std::cout << "This is a lepton" << std::endl;
+
+     // Check that the mother particle is a Z boson (23)
+     if(genmotherpart_id != 23) continue;
+     // std::cout << "The mother is a Z boson" << std::endl;
+     // Add the 4-momentum of this particle to the vector used later for dilepton mass calculation.
+     genleptonindices.push_back(idx);
+
+   }
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 123345032.4 $\pm$ 9097.8 & 10143436.1 $\pm$ 222.4 & 4604378.7 $\pm$ 194.2 & 2161589333.1 $\pm$ 46229.2 & 24774761.3 $\pm$ 684.3 \\ \hline
+NRecoTriggers1 & 30621651.4 $\pm$ 6193.5 & 646052.7 $\pm$ 276.0 & 406040.8 $\pm$ 245.3 & 198606621.9 $\pm$ 65736.6 & 2497521.9 $\pm$ 877.8 \\ \hline
+NRecoMuon1 & 27543854.0 $\pm$ 5923.5 & 627558.3 $\pm$ 270.7 & 386830.1 $\pm$ 242.0 & 197889827.2 $\pm$ 65624.5 & 2346725.2 $\pm$ 853.6 \\ \hline
+NRecoElectron1 & 4789561.6 $\pm$ 2575.9 & 460479.2 $\pm$ 236.4 & 253940.5 $\pm$ 203.4 & 100062159.6 $\pm$ 47228.7 & 1764925.1 $\pm$ 749.2 \\ \hline
+NRecoTau1 & 50656.9 $\pm$ 258.0 & 4030.6 $\pm$ 27.3 & 3875.8 $\pm$ 24.6 & 85957.7 $\pm$ 1316.8 & 27718.6 $\pm$ 97.2 \\ \hline
+NRecoBJet & 49427.3 $\pm$ 255.8 & 1905.5 $\pm$ 18.6 & 3761.8 $\pm$ 24.3 & 84796.8 $\pm$ 1312.3 & 8077.7 $\pm$ 52.5 \\ \hline
+NElectron1Tau1Combinations & 232.5 $\pm$ 16.3 & 32.4 $\pm$ 2.5 & 66.5 $\pm$ 3.4 & 163.1 $\pm$ 39.8 & 110.3 $\pm$ 6.1 \\ \hline
+NDiJetCombinations & 232.1 $\pm$ 16.3 & 30.7 $\pm$ 2.5 & 65.7 $\pm$ 3.4 & 161.1 $\pm$ 39.8 & 104.0 $\pm$ 6.0 \\ \hline
+\end{tabular}
+
+
+393975349
+207594779
+207594779
+
+                        Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex         28399  ( 0.568)        28399  ( 0.568) 
+              NRecoTriggers1          6639  ( 0.133)         6639  ( 0.133) 
+                  NRecoMuon1         46131  ( 0.923)         5992  ( 0.120) 
+              NRecoElectron1          1251  ( 0.025)         1092  ( 0.022) 
+                   NRecoTau1          1784  ( 0.036)            9  ( 0.000) 
+                   NRecoBJet         49570  ( 0.991)            9  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations         49650  ( 0.993)            0  ( 0.000) 
+---------------------------------------------------------------------------
+
+
+                        Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex         47961  ( 0.959)        47961  ( 0.959) 
+              NRecoTriggers1          7836  ( 0.157)         7836  ( 0.157) 
+                  NRecoMuon1         42002  ( 0.840)         7763  ( 0.155) 
+              NRecoElectron1          3910  ( 0.078)         3273  ( 0.065) 
+                   NRecoTau1          1665  ( 0.033)           11  ( 0.000) 
+                   NRecoBJet         49526  ( 0.991)           11  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations         49463  ( 0.989)            0  ( 0.000) 
+--------------------------------------------------------------------------
+
+                        Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex         50000  ( 1.000)        50000  ( 1.000) 
+              NRecoTriggers1          7912  ( 0.158)         7912  ( 0.158) 
+                  NRecoMuon1         41518  ( 0.830)         7912  ( 0.158) 
+              NRecoElectron1          4251  ( 0.085)         3564  ( 0.071) 
+                   NRecoTau1          1816  ( 0.036)           12  ( 0.000) 
+                   NRecoBJet         49367  ( 0.987)           12  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations         49316  ( 0.986)            0  ( 0.000) 
+-------------------------------------------------------------------
