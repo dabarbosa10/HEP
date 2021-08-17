@@ -1,0 +1,57 @@
+***NRecoVertex        1   -1
+***NRecoTriggers1     1   -1
+***NRecoMuon1         0    0
+***NRecoElectron1     0    0
+***NRecoTau1          2    2
+***NRecoTau2          2    2
+***NRecoBJet          0    0
+***METCut             1   -1
+***NDiTauCombinations         1   -1
+***NDiJetCombinations    0    0
+
+DiscrByDeltaR true
+DeltaRCut      0.3
+
+DiscrByOSLSType  LS     #### OS or LS
+
+DiscrByCosDphi   true           # dPhi is calculated between Tau1 and Tau2 
+CosDphiCut       -1.00   -0.95
+
+DiscrByMassReco  true
+HowCalculateMassReco  InvariantMass     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut         100.0   9999.9
+
+Trigger1FirstRequirement HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+Trigger1SecondRequirement HLT_DoubleMediumChargedIsoPFTau
+UseTriggerWildcard true
+
+Trigger2FirstRequirement HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
+Trigger2SecondRequirement HLT_DoubleMediumChargedIsoPFTau
+
+---------------------------------------------------------------------------
+                 NRecoVertex         49982  ( 1.000)        49982  ( 1.000) 
+              NRecoTriggers1          1838  ( 0.037)         1838  ( 0.037) 
+                  NRecoMuon1         41522  ( 0.830)         1837  ( 0.037) 
+              NRecoElectron1         43822  ( 0.876)          177  ( 0.004) 
+                   NRecoTau1             0  ( 0.000)            0  ( 0.000) 
+                   NRecoTau2             0  ( 0.000)            0  ( 0.000) 
+                   NRecoBJet         49289  ( 0.986)            0  ( 0.000) 
+                      METCut         22376  ( 0.448)            0  ( 0.000) 
+          NDiTauCombinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations         49311  ( 0.986)            0  ( 0.000) 
+---------------------------------------------------------------------------
+
+
+
+#####Triggers2017 Nicolas
+#Trigger1FirstRequirement HLT_DoubleMediumChargedIsoPFTau
+#Trigger1SecondRequirement HLT_DoubleMediumChargedIsoPFTau
+#UseTriggerWildcard true
+
+/// -- Triggers 2018 - QCD (Nicolas) ---///
+
+Trigger1FirstRequirement HLT_DoubleMediumChargedIsoPFTau
+Trigger1SecondRequirement HLT_DoubleMediumChargedIsoPFTauHPS
+UseTriggerWildcard true
+
+
