@@ -1,0 +1,60 @@
+
+####### Nicolas Config Files without stitching ##############
+
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 215507067.1 $\pm$ 3923.4 & 10150568.4 $\pm$ 220.4 & 4609532.9 $\pm$ 193.5 & 2163438740.5 $\pm$ 45872.2 & 24804658.6 $\pm$ 677.6 \\ \hline
+NRecoTriggers1 & 9171539.4 $\pm$ 3532.5 & 82439.4 $\pm$ 109.7 & 52671.0 $\pm$ 110.4 & 1942398.5 $\pm$ 5702.5 & 491373.9 $\pm$ 405.5 \\ \hline
+NRecoMuon1 & 9066729.0 $\pm$ 3512.9 & 79981.1 $\pm$ 107.8 & 50764.1 $\pm$ 109.5 & 1853971.6 $\pm$ 5529.3 & 467655.6 $\pm$ 395.8 \\ \hline
+NRecoElectron1 & 1186064.5 $\pm$ 1279.9 & 44486.9 $\pm$ 77.8 & 16982.1 $\pm$ 85.4 & 1079813.3 $\pm$ 4541.2 & 240564.2 $\pm$ 285.1 \\ \hline
+NRecoTau1 & 1132.7 $\pm$ 30.9 & 19.6 $\pm$ 1.9 & 33.5 $\pm$ 2.0 & 105.3 $\pm$ 20.9 & 105.2 $\pm$ 6.0 \\ \hline
+METCut & 753.7 $\pm$ 24.2 & 17.9 $\pm$ 1.9 & 28.3 $\pm$ 1.8 & 91.6 $\pm$ 19.3 & 91.9 $\pm$ 5.6 \\ \hline
+NRecoBJet & 720.3 $\pm$ 24.1 & 8.0 $\pm$ 1.2 & 25.9 $\pm$ 1.7 & 90.5 $\pm$ 19.3 & 32.3 $\pm$ 3.3 \\ \hline
+NDiTauCombinations & 179.5 $\pm$ 15.9 & 1.3 $\pm$ 0.5 & 3.5 $\pm$ 0.7 & 32.1 $\pm$ 11.9 & 4.7 $\pm$ 1.3 \\ \hline
+NDiJetCombinations & 179.0 $\pm$ 15.9 & 1.3 $\pm$ 0.5 & 3.4 $\pm$ 0.7 & 32.1 $\pm$ 11.9 & 4.1 $\pm$ 1.2 \\ \hline
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+############################################ Nicolas Config Files Stitching ############
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 94057243.3 $\pm$ 8917.2 & 10150568.4 $\pm$ 220.4 & 4609532.9 $\pm$ 193.5 & 2163438740.5 $\pm$ 45872.2 & 24804658.6 $\pm$ 677.6 \\ \hline
+NRecoTriggers1 & 8463914.1 $\pm$ 3402.0 & 82439.4 $\pm$ 109.7 & 52671.0 $\pm$ 110.4 & 1942398.5 $\pm$ 5702.5 & 491373.9 $\pm$ 405.5 \\ \hline
+NRecoMuon1 & 7362761.8 $\pm$ 3184.5 & 79981.1 $\pm$ 107.8 & 50764.1 $\pm$ 109.5 & 1853971.6 $\pm$ 5529.3 & 467655.6 $\pm$ 395.8 \\ \hline
+NRecoElectron1 & 4739725.0 $\pm$ 2573.7 & 44486.9 $\pm$ 77.8 & 16982.1 $\pm$ 85.4 & 1079813.3 $\pm$ 4541.2 & 240564.2 $\pm$ 285.1 \\ \hline
+NRecoTau1 & 400.2 $\pm$ 10.5 & 19.6 $\pm$ 1.9 & 33.5 $\pm$ 2.0 & 105.3 $\pm$ 20.9 & 105.2 $\pm$ 6.0 \\ \hline
+METCut & 283.9 $\pm$ 8.1 & 17.9 $\pm$ 1.9 & 28.3 $\pm$ 1.8 & 91.6 $\pm$ 19.3 & 91.9 $\pm$ 5.6 \\ \hline
+NRecoBJet & 262.2 $\pm$ 7.8 & 8.0 $\pm$ 1.2 & 25.9 $\pm$ 1.7 & 90.5 $\pm$ 19.3 & 32.3 $\pm$ 3.3 \\ \hline
+NDiTauCombinations & 31.6 $\pm$ 1.9 & 1.3 $\pm$ 0.5 & 3.5 $\pm$ 0.7 & 32.1 $\pm$ 11.9 & 4.7 $\pm$ 1.3 \\ \hline
+NDiJetCombinations & 31.0 $\pm$ 1.9 & 1.3 $\pm$ 0.5 & 3.4 $\pm$ 0.7 & 32.1 $\pm$ 11.9 & 4.1 $\pm$ 1.2 \\ \hline
+\end{tabular}
+
+
+
+
+
+############## Nicolas Config Files stit but wrong Way ###################
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 99122457.4 $\pm$ 9704.5 & 10150568.4 $\pm$ 220.4 & 4609532.9 $\pm$ 193.5 & 2163438740.5 $\pm$ 45872.2 & 24804658.6 $\pm$ 677.6 \\ \hline
+NRecoTriggers1 & 8842307.3 $\pm$ 3758.7 & 82439.4 $\pm$ 109.7 & 52671.0 $\pm$ 110.4 & 1942398.5 $\pm$ 5702.5 & 491373.9 $\pm$ 405.5 \\ \hline
+NRecoMuon1 & 7725779.1 $\pm$ 3550.1 & 79981.1 $\pm$ 107.8 & 50764.1 $\pm$ 109.5 & 1853971.6 $\pm$ 5529.3 & 467655.6 $\pm$ 395.8 \\ \hline
+NRecoElectron1 & 4809257.4 $\pm$ 2663.8 & 44486.9 $\pm$ 77.8 & 16982.1 $\pm$ 85.4 & 1079813.3 $\pm$ 4541.2 & 240564.2 $\pm$ 285.1 \\ \hline
+NRecoTau1 & 712.3 $\pm$ 26.4 & 19.6 $\pm$ 1.9 & 33.5 $\pm$ 2.0 & 105.3 $\pm$ 20.9 & 105.2 $\pm$ 6.0 \\ \hline
+METCut & 441.0 $\pm$ 17.1 & 17.9 $\pm$ 1.9 & 28.3 $\pm$ 1.8 & 91.6 $\pm$ 19.3 & 91.9 $\pm$ 5.6 \\ \hline
+NRecoBJet & 420.4 $\pm$ 17.8 & 8.0 $\pm$ 1.2 & 25.9 $\pm$ 1.7 & 90.5 $\pm$ 19.3 & 32.3 $\pm$ 3.3 \\ \hline
+NDiTauCombinations & 119.0 $\pm$ 12.5 & 1.3 $\pm$ 0.5 & 3.5 $\pm$ 0.7 & 32.1 $\pm$ 11.9 & 4.7 $\pm$ 1.3 \\ \hline
+NDiJetCombinations & 119.0 $\pm$ 12.5 & 1.3 $\pm$ 0.5 & 3.4 $\pm$ 0.7 & 32.1 $\pm$ 11.9 & 4.1 $\pm$ 1.2 \\ \hline
+\end{tabular}
