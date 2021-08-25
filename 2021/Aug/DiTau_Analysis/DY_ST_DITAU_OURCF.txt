@@ -1,0 +1,35 @@
+
+################## Our config files without sitching##########
+
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 215505062.7 $\pm$ 3923.7 & 10150448.2 $\pm$ 220.4 & 4609449.7 $\pm$ 193.5 & 2163435415.5 $\pm$ 45872.5 & 24804119.6 $\pm$ 677.8 \\ \hline
+NRecoTriggers1 & 8921099.6 $\pm$ 3486.0 & 79451.8 $\pm$ 107.7 & 50975.2 $\pm$ 108.3 & 1874968.4 $\pm$ 5596.2 & 472563.1 $\pm$ 397.8 \\ \hline
+NRecoMuon1 & 8819313.9 $\pm$ 3466.6 & 77062.9 $\pm$ 105.9 & 49123.4 $\pm$ 107.4 & 1789336.0 $\pm$ 5425.4 & 449619.7 $\pm$ 388.2 \\ \hline
+NRecoElectron1 & 1148620.0 $\pm$ 1259.8 & 42551.7 $\pm$ 76.1 & 16254.6 $\pm$ 83.5 & 1042472.8 $\pm$ 4462.6 & 229460.7 $\pm$ 278.5 \\ \hline
+NRecoTau1 & 1476.4 $\pm$ 35.4 & 25.1 $\pm$ 2.2 & 41.2 $\pm$ 2.2 & 154.7 $\pm$ 26.1 & 126.9 $\pm$ 6.6 \\ \hline
+NRecoTau2 & 1476.4 $\pm$ 35.4 & 25.1 $\pm$ 2.2 & 41.2 $\pm$ 2.2 & 154.7 $\pm$ 26.1 & 126.9 $\pm$ 6.6 \\ \hline
+NRecoBJet & 1414.2 $\pm$ 35.2 & 10.9 $\pm$ 1.5 & 37.9 $\pm$ 2.1 & 153.2 $\pm$ 26.1 & 43.7 $\pm$ 3.9 \\ \hline
+METCut & 936.9 $\pm$ 27.5 & 10.3 $\pm$ 1.4 & 31.6 $\pm$ 1.9 & 126.8 $\pm$ 23.7 & 39.1 $\pm$ 3.7 \\ \hline
+NDiTauCombinations & 225.2 $\pm$ 17.8 & 2.4 $\pm$ 0.7 & 4.2 $\pm$ 0.7 & 51.2 $\pm$ 15.5 & 6.6 $\pm$ 1.5 \\ \hline
+NDiJetCombinations & 223.9 $\pm$ 17.8 & 2.4 $\pm$ 0.7 & 4.2 $\pm$ 0.7 & 51.2 $\pm$ 15.5 & 5.7 $\pm$ 1.4 \\ \hline
+\end{tabular}
+
+
+################## Our config files with sitching##########
+
+\begin{tabular}{ | l | c | c | c | c | c | }
+\hline
+Process & DY+Jets & SingleTop & VV & W+Jets & t#bar{t}\\ \hline
+NRecoVertex & 94056091.8 $\pm$ 8917.2 & 10150448.2 $\pm$ 220.4 & 4609449.7 $\pm$ 193.5 & 2163435415.5 $\pm$ 45872.5 & 24804119.6 $\pm$ 677.8 \\ \hline
+NRecoTriggers1 & 8243621.9 $\pm$ 3359.1 & 79451.8 $\pm$ 107.7 & 50975.2 $\pm$ 108.3 & 1874968.4 $\pm$ 5596.2 & 472563.1 $\pm$ 397.8 \\ \hline
+NRecoMuon1 & 7171002.1 $\pm$ 3144.1 & 77062.9 $\pm$ 105.9 & 49123.4 $\pm$ 107.4 & 1789336.0 $\pm$ 5425.4 & 449619.7 $\pm$ 388.2 \\ \hline
+NRecoElectron1 & 4614892.1 $\pm$ 2540.3 & 42551.7 $\pm$ 76.1 & 16254.6 $\pm$ 83.5 & 1042472.8 $\pm$ 4462.6 & 229460.7 $\pm$ 278.5 \\ \hline
+NRecoTau1 & 510.4 $\pm$ 11.7 & 25.1 $\pm$ 2.2 & 41.2 $\pm$ 2.2 & 154.7 $\pm$ 26.1 & 126.9 $\pm$ 6.6 \\ \hline
+NRecoTau2 & 510.4 $\pm$ 11.7 & 25.1 $\pm$ 2.2 & 41.2 $\pm$ 2.2 & 154.7 $\pm$ 26.1 & 126.9 $\pm$ 6.6 \\ \hline
+NRecoBJet & 473.7 $\pm$ 11.4 & 10.9 $\pm$ 1.5 & 37.9 $\pm$ 2.1 & 153.2 $\pm$ 26.1 & 43.7 $\pm$ 3.9 \\ \hline
+METCut & 336.8 $\pm$ 8.7 & 10.3 $\pm$ 1.4 & 31.6 $\pm$ 1.9 & 126.8 $\pm$ 23.7 & 39.1 $\pm$ 3.7 \\ \hline
+NDiTauCombinations & 41.0 $\pm$ 2.2 & 2.4 $\pm$ 0.7 & 4.2 $\pm$ 0.7 & 51.2 $\pm$ 15.5 & 6.6 $\pm$ 1.5 \\ \hline
+NDiJetCombinations & 40.3 $\pm$ 2.1 & 2.4 $\pm$ 0.7 & 4.2 $\pm$ 0.7 & 51.2 $\pm$ 15.5 & 5.7 $\pm$ 1.4 \\ \hline
+\end{tabular}
