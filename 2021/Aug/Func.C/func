@@ -1,0 +1,25 @@
+   if(! ( ( (genpart_id == 11 || genpart_id ==  13) && _Gen->status[idx] == 1) || (genpart_id == 15 && _Gen->status[idx] == 2) ) )  continue;
+     // std::cout << "This is a lepton" << std::endl;
+
+
+     // Check that the mother particle is a Z boson (23)
+     //if (genmotherpart_id!=23){
+     // std::cout<<"The mother is" << genmotherpart_id <<std::endl;
+     // continue;}     
+
+     if( (genmotherpart_id == 23) || (genmotherpart_id==15)  ){
+     //std::cout<<"No es un Z, es un: "<<genmotherpart_id<<std::endl;
+     // continue;}
+     //if(genmotherpart_id != 15) continue; 
+     //std::cout << "The mother is " <<genmotherpart_id <<" boson" << std::endl;
+     // Add the 4-momentum of this particle to the vector used later for dilepton mass calculation.
+     genleptonindices.push_back(idx);
+    }
+
+   }
+
+   // Check that this vector only contains the information from two leptons.
+   if(genleptonindices.size() < 2){
+     // std::cout << "Not enough or too much leptons coming from the Z, returning false" << std::endl;
+     return false;
+   }
