@@ -1,0 +1,73 @@
+############### eta 2.1 #############
+
+Process         & Events (2016)         
+
+W+jets          & 164.3   $\pm$ 43.3 
+Drell-Yan       & 234.6   $\pm$ 16.4
+$t\bar{t}$      & 109.2   $\pm$  6.2
+SingleTop       & 30.7    $\pm$  2.4
+Diboson         & 65.7    $\pm$  3.4 
+QCD             & 36.2    $\pm$  5.0 
+
+############## eta 2.4 #########
+
+Process         & Events (2016)         
+
+W+jets          & 146.8   $\pm$ 43.4
+Drell-Yan       & 255.0   $\pm$ 19.2 
+$t\bar{t}$      & 110.0   $\pm$  6.1
+SingleTop       & 31.8    $\pm$  2.5
+Diboson         & 70.3    $\pm$  3.5 
+QCD             ------    ---------
+
+
+##### Relative difference
+
+W+jets           - 12 %
+Drell-Yan        + 9 %
+$t\bar{t}$       + 0.7 %
+Single Top       + 3.6 %
+Diboson.         + 7 %
+
+
+
+
+
+
+
+
+
+############### With HT filter and Mass Binned > 500GeV ###########################
+
+Process & DY+Jets
+NRecoVertex & 5449.7 $\pm$ 8.1 
+NRecoTriggers1 & 2033.4 $\pm$ 6.2 
+NRecoMuon1 & 1965.5 $\pm$ 6.1 
+NRecoElectron1 & 966.4 $\pm$ 4.5
+NRecoTau1 & 81.1 $\pm$ 1.3 
+NRecoBJet & 79.4 $\pm$ 1.3 
+NElectron1Tau1Combinations & 34.7 $\pm$ 0.8 
+NDiJetCombinations & 34.4 $\pm$ 0.8 
+
+#############################
+Process & DY+Jets 
+NRecoVertex & 4428.9 $\pm$ 7.9
+NRecoTriggers1 & 2067.8 $\pm$ 6.2 
+NRecoMuon1 & 1751.4 $\pm$ 5.8 
+NRecoElectron1 & 792.6 $\pm$ 4.2 
+NRecoTau1 & 65.1 $\pm$ 1.2 
+NRecoBJet & 64.6 $\pm$ 1.2 
+NElectron1Tau1Combinations & 32.9 $\pm$ 0.8 
+NDiJetCombinations & 32.8 $\pm$ 0.8 
+
+
+files/Zprime_NonUniversalSSM_M500_gl1p0_gh1p0.root     Zprime_M500_gl1p0_gh1p0.root    6041    1 sig 1.0
+files/Zprime_NonUniversalSSM_M2000_gl1p0_gh1p0.root    Zprime_M2000_gl1p0_gh1p0.root   18.64   1 sig 1.0
+
+files/Zprime_NonUniversalSSM_M500_gl1p0_gh1p0.root      Zprime_M500_gl1p0_gh1p0.root    172.5   1 sig 1.0
+
+
+
+
+
+
