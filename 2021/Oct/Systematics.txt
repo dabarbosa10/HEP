@@ -1,0 +1,28 @@
+
+############################ Typical Signal Region For Etau Channel
+
+                        Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex         47961  ( 0.959)        47961  ( 0.959) 
+              NRecoTriggers1          7836  ( 0.157)         7836  ( 0.157) 
+                  NRecoMuon1         42002  ( 0.840)         7763  ( 0.155) 
+              NRecoElectron1          3910  ( 0.078)         3273  ( 0.065) 
+                   NRecoTau1          1665  ( 0.033)           11  ( 0.000) 
+                   NRecoBJet         49526  ( 0.991)           11  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations         49463  ( 0.989)            0  ( 0.000) 
+---------------------------------------------------------------------------
+
+##################### Smearing electron
+
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+Aborted
+
+################ Smearing Tau
+
+New file!
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  _Map_base::at
+Aborted
+
