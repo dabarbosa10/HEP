@@ -1,0 +1,144 @@
+
+
+
+1
+Cut: NRecoVertex  100.0         
+Cut: NRecoTriggers1 24.83 Cumulative: 153966683.80 
+Cut: NRecoMuon1 17.89 Cumulative: 181510537.80 
+Cut: NRecoElectron1 2.64 Cumulative: 186300099.40 
+Cut: NRecoTau1 0.03 Cumulative: 186350756.30 
+Cut: NRecoBJet  0.03 Cumulative: 186400183.60 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 186400419.10 
+Cut: NDiJetCombinations  0.00 Cumulative: 186400653.70 
+
+
+3
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 6.37 Cumulative: 10789488.80 
+Cut: NRecoMuon1 5.82 Cumulative: 11417047.10 
+Cut: NRecoElectron1 4.03 Cumulative: 11877526.30 
+Cut: NRecoTau1 0.03 Cumulative: 11881556.90 
+Cut: NRecoBJet  0.02 Cumulative: 11883462.40 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 11883494.80 
+Cut: NDiJetCombinations  0.00 Cumulative: 11883525.50 
+
+
+5
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 8.82 Cumulative: 5010419.50 
+Cut: NRecoMuon1 7.72 Cumulative: 5397249.60 
+Cut: NRecoElectron1 4.70 Cumulative: 5651190.10 
+Cut: NRecoTau1 0.07 Cumulative: 5655065.90 
+Cut: NRecoBJet  0.07 Cumulative: 5658827.70 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 5658894.20 
+Cut: NDiJetCombinations  0.00 Cumulative: 5658959.90 
+
+
+7
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 9.19 Cumulative: 2360195955.00 
+Cut: NRecoMuon1 8.38 Cumulative: 2558085782.20 
+Cut: NRecoElectron1 3.91 Cumulative: 2658147941.80 
+Cut: NRecoTau1 0.00 Cumulative: 2658233899.50 
+Cut: NRecoBJet  0.00 Cumulative: 2658318696.30 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 2658318861.40 
+Cut: NDiJetCombinations  0.00 Cumulative: 2658319025.70 
+
+
+9
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 10.08 Cumulative: 27272283.20 
+Cut: NRecoMuon1 8.60 Cumulative: 29619008.40 
+Cut: NRecoElectron1 5.96 Cumulative: 31383933.50 
+Cut: NRecoTau1 0.09 Cumulative: 31411652.10 
+Cut: NRecoBJet  0.03 Cumulative: 31419729.80 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 31419840.10 
+Cut: NDiJetCombinations  0.00 Cumulative: 31419949.30 
+
+
+
+\begin{tabular}{  |c| c | c | c | c | c|  }
+\hline
+Process & DY+Jets(\%) & Single Top (\%) & Diboson(\%) & W+Jets(\%) & $t\bar{t}$ (\%)\\ \hline
+Vertex	        & 100.0  & 100.0 & 100.0 & 100.0  & 100.0 \\	
+Triggers        & 24.83	 & 6.37  &	8.82 & 9.19  & 10.08 \\
+
+Muon veto       & 17.89  & 5.82  &	7.72 & 8.38  & 8.60 \\	
+$N(e)=1$        & 2.64   & 4.03  &	4.70 &3.91  & 5.96    \\	
+$N(\tau)=1$	    & 0.03   & 0.03  &	0.07 & 0.0 & 0.09 \\
+
+b-jet veto	    & 0.03   & 0.02  &	0.07 & 0.0   & 0.03 \\	
+$N(e,\tau)=1$	&	0.0  &	0.0	 &	 0.0 & 0.0   & 0.0 \\	
+VBF dijet veto	&	0.0  &	0.0  &	 0.0 & 0.0  & 0.0 \\	\hline
+\end{tabular}
+
+
+%============================================================
+1
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 24.83
+Cut: NRecoMuon1 89.95
+Cut: NRecoElectron1 17.39
+Cut: NRecoTau1 1.06
+Cut: NRecoBJet  97.57
+Cut: NElectron1Tau1Combinations 0.48
+Cut: NDiJetCombinations  99.62
+
+
+3
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 6.37
+Cut: NRecoMuon1 97.14
+Cut: NRecoElectron1 73.38
+Cut: NRecoTau1 0.88
+Cut: NRecoBJet  47.28
+Cut: NElectron1Tau1Combinations 1.70
+Cut: NDiJetCombinations  94.75
+
+
+5
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 8.82
+Cut: NRecoMuon1 95.27
+Cut: NRecoElectron1 65.65
+Cut: NRecoTau1 1.53
+Cut: NRecoBJet  97.06
+Cut: NElectron1Tau1Combinations 1.77
+Cut: NDiJetCombinations  98.80
+
+
+7
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 9.19
+Cut: NRecoMuon1 99.64
+Cut: NRecoElectron1 50.56
+Cut: NRecoTau1 0.09
+Cut: NRecoBJet  98.65
+Cut: NElectron1Tau1Combinations 0.19
+Cut: NDiJetCombinations  99.52
+
+
+9
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 10.08
+Cut: NRecoMuon1 93.96
+Cut: NRecoElectron1 75.21
+Cut: NRecoTau1 1.57
+Cut: NRecoBJet  29.14
+Cut: NElectron1Tau1Combinations 1.37
+Cut: NDiJetCombinations  99.00
+
+\begin{tabular}{  |c| c | c | c | c | c|  }
+\hline
+Process & DY+Jets(\%) & Single Top (\%) & Diboson(\%) & W+Jets(\%) & $t\bar{t}$ (\%)\\ \hline
+Vertex	        & 100.0  & 100.0 & 100.0 & 100.0  & 100.0 \\	
+Triggers        & 24.83	 & 6.37  &	8.82 & 9.19  & 10.08 \\
+
+Muon veto       & 17.89  & 5.82  &	7.72 & 8.38  & 8.60 \\	
+$N(e)=1$        & 2.64   & 4.03  &	4.70 &3.91  & 5.96    \\	
+$N(\tau)=1$	    & 0.03   & 0.03  &	0.07 & 0.0 & 0.09 \\
+
+b-jet veto	    & 0.03   & 0.02  &	0.07 & 0.0   & 0.03 \\	
+$N(e,\tau)=1$	&	0.0  &	0.0	 &	 0.0 & 0.0   & 0.0 \\	
+VBF dijet veto	&	0.0  &	0.0  &	 0.0 & 0.0  & 0.0 \\	\hline
+\end{tabular}

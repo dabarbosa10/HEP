@@ -1,0 +1,53 @@
+DY+Jets
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 29.69 Cumulative: 155566479.60 
+Cut: NRecoMuon1 20.99 Cumulative: 188217707.10 
+Cut: NRecoElectron1 0.92 Cumulative: 189940861.90 
+Cut: NRecoTau1 0.01 Cumulative: 189957128.90 
+Cut: NRecoBJet  0.01 Cumulative: 189972866.10 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 189973117.80 
+Cut: NDiJetCombinations  0.00 Cumulative: 189973366.80 
+
+
+SingleTop
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 6.81 Cumulative: 16274825.50 
+Cut: NRecoMuon1 6.16 Cumulative: 17277757.00 
+Cut: NRecoElectron1 2.36 Cumulative: 17685743.90 
+Cut: NRecoTau1 0.03 Cumulative: 17690551.80 
+Cut: NRecoBJet  0.01 Cumulative: 17692797.40 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 17692847.10 
+Cut: NDiJetCombinations  0.00 Cumulative: 17692895.60 
+
+
+Diboson
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 8.76 Cumulative: 7242955.60 
+Cut: NRecoMuon1 7.59 Cumulative: 7792924.50 
+Cut: NRecoElectron1 2.48 Cumulative: 7985988.90 
+Cut: NRecoTau1 0.05 Cumulative: 7989802.50 
+Cut: NRecoBJet  0.05 Cumulative: 7993580.40 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 7993699.40 
+Cut: NDiJetCombinations  0.00 Cumulative: 7993817.70 
+
+
+W+Jets
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 9.05 Cumulative: 3916590760.80 
+Cut: NRecoMuon1 8.25 Cumulative: 4239606342.00 
+Cut: NRecoElectron1 0.55 Cumulative: 4262850495.80 
+Cut: NRecoTau1 0.00 Cumulative: 4262914525.90 
+Cut: NRecoBJet  0.00 Cumulative: 4262978007.40 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 4262978313.00 
+Cut: NDiJetCombinations  0.00 Cumulative: 4262978617.70 
+
+
+ttbar
+Cut: NRecoVertex  100.0
+Cut: NRecoTriggers1 11.16 Cumulative: 40667234.20 
+Cut: NRecoMuon1 9.29 Cumulative: 44447220.00 
+Cut: NRecoElectron1 3.97 Cumulative: 46213993.50 
+Cut: NRecoTau1 0.07 Cumulative: 46247553.90 
+Cut: NRecoBJet  0.02 Cumulative: 46257604.70 
+Cut: NElectron1Tau1Combinations 0.00 Cumulative: 46257813.30 
+Cut: NDiJetCombinations  0.00 Cumulative: 46258011.20 
