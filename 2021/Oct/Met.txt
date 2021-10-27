@@ -1,0 +1,37 @@
+                        Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex         48271  ( 0.965)        48271  ( 0.965) 
+              NRecoTriggers1          7843  ( 0.157)         7843  ( 0.157) 
+                  NRecoMuon1         41922  ( 0.838)         7763  ( 0.155) 
+              NRecoElectron1          3994  ( 0.080)         3342  ( 0.067) 
+                   NRecoTau1          1532  ( 0.031)            9  ( 0.000) 
+                   NRecoBJet         49405  ( 0.988)            9  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations         49371  ( 0.987)            0  ( 0.000) 
+
+
+
+
+Without MET
+                        Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex        139673  ( 0.966)       139673  ( 0.966) 
+              NRecoTriggers1         22788  ( 0.158)        22788  ( 0.158) 
+                  NRecoMuon1        121188  ( 0.838)        22545  ( 0.156) 
+              NRecoElectron1         11481  ( 0.079)         9618  ( 0.067) 
+                   NRecoTau1          4424  ( 0.031)           29  ( 0.000) 
+                   NRecoBJet        142771  ( 0.988)           28  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations        142658  ( 0.987)            0  ( 0.000) 
+With Met
+                      Name                  Indiv.            Cumulative
+---------------------------------------------------------------------------
+                 NRecoVertex        139627  ( 0.966)       139627  ( 0.966) 
+              NRecoTriggers1         22788  ( 0.158)        22788  ( 0.158) 
+                  NRecoMuon1        121195  ( 0.838)        22542  ( 0.156) 
+              NRecoElectron1         11478  ( 0.079)         9616  ( 0.067) 
+                   NRecoTau1          4422  ( 0.031)           29  ( 0.000) 
+                   NRecoBJet        142771  ( 0.988)           28  ( 0.000) 
+  NElectron1Tau1Combinations             0  ( 0.000)            0  ( 0.000) 
+          NDiJetCombinations        142659  ( 0.987)            0  ( 0.000) 
+---------------------------------------------------------------------------
