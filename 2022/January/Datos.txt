@@ -1,0 +1,70 @@
+\begin{tabular}{ | l | c | }
+\hline
+Process & t#bar{t}\\ \hline
+NRecoVertex & 24905034.8 $\pm$ 8085.2 \\ \hline
+NRecoTriggers1 & 24905034.8 $\pm$ 8085.2 \\ \hline
+NRecoElectron1 & 22578433.0 $\pm$ 12784.6 \\ \hline
+NRecoMuon1 & 2498261.3 $\pm$ 10843.2 \\ \hline
+NRecoTau1 & 38853.8 $\pm$ 1420.6 \\ \hline
+NRecoBJet & 11663.0 $\pm$ 778.7 \\ \hline
+NMuon1Tau1Combinations & 476.3 $\pm$ 157.4 \\ \hline
+NDiJetCombinations & 476.3 $\pm$ 157.4 \\ \hline
+orig & 21833635.8 $\pm$ 2953530.1 \\ \hline
+Btag_Up & 21833635.8 $\pm$ 2953530.1 \\ \hline
+Btag_Down & 21833635.8 $\pm$ 2953530.1 \\ \hline
+\end{tabular}
+
+
+Usando PileUp
+Para la muestra de ttbar:
+para el canal de mutau
+
+\begin{tabular}{ | l | c | }
+\hline
+Process & t#bar{t}\\ \hline
+NRecoVertex & 25656753.0 $\pm$ 436.7 \\ \hline
+NRecoTriggers1 & 23812539.5 $\pm$ 864.9 \\ \hline
+NRecoElectron1 & 21582218.2 $\pm$ 1141.8 \\ \hline
+NRecoMuon1 & 2393857.0 $\pm$ 861.3 \\ \hline
+NRecoTau1 & 37725.4 $\pm$ 113.3 \\ \hline
+NRecoBJet & 10106.6 $\pm$ 58.7 \\ \hline
+NMuon1Tau1Combinations & 131.7 $\pm$ 6.7 \\ \hline
+NDiJetCombinations & 127.7 $\pm$ 6.6 \\ \hline
+orig & 23219714.4 $\pm$ 406402.9 \\ \hline
+Pileup_weight_Up & 23651958.2 $\pm$ 379564.3 \\ \hline
+Pileup_weight_Down & 22770436.9 $\pm$ 431454.0 \\ \hline
+\end{tabular}
+Para W+Jets:
+
+\begin{tabular}{ | l | c | }
+\hline
+Process & W+Jets\\ \hline
+NRecoVertex & 2110963356.9 $\pm$ 47138.3 \\ \hline
+NRecoTriggers1 & 2110963248.0 $\pm$ 47138.3 \\ \hline
+NRecoElectron1 & 1989930678.7 $\pm$ 69869.6 \\ \hline
+NRecoMuon1 & 148374567.4 $\pm$ 59380.2 \\ \hline
+NRecoTau1 & 96232.8 $\pm$ 1565.9 \\ \hline
+NRecoBJet & 95928.1 $\pm$ 1563.4 \\ \hline
+NMuon1Tau1Combinations & 66.3 $\pm$ 41.1 \\ \hline
+NDiJetCombinations & 66.3 $\pm$ 41.1 \\ \hline
+orig & 1910196067.6 $\pm$ 0.0 \\ \hline
+Pileup_weight_Up & 2317765415.9 $\pm$ 0.0 \\ \hline
+Pileup_weight_Down & 1511632824.8 $\pm$ 589764119.9 \\ \hline
+\end{tabular}
+
+\begin{tabular}{ | l | c | }
+\hline
+Process & DY+Jets\\ \hline
+NRecoVertex & 206500060.7 $\pm$ 4059.2 \\ \hline
+NRecoTriggers1 & 198895427.5 $\pm$ 5119.6 \\ \hline
+NRecoElectron1 & 174736097.2 $\pm$ 7203.2 \\ \hline
+NRecoMuon1 & 16319969.7 $\pm$ 4745.5 \\ \hline
+NRecoTau1 & 60687.9 $\pm$ 300.8 \\ \hline
+NRecoBJet & 60154.5 $\pm$ 299.5 \\ \hline
+NMuon1Tau1Combinations & 307.1 $\pm$ 21.4 \\ \hline
+NDiJetCombinations & 307.1 $\pm$ 21.4 \\ \hline
+orig & 201468962.4 $\pm$ 3884650.5 \\ \hline
+Pileup_weight_Up & 197902485.6 $\pm$ 4241280.4 \\ \hline
+Pileup_weight_Down & 205939612.2 $\pm$ 3361063.0 \\ \hline
+\end{tabular}
+
